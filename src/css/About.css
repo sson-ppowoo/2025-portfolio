@@ -1,0 +1,84 @@
+.About{
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  margin: 100px auto;
+}
+.About .About_title{
+  width: 100%;
+  height: auto;  
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About .About_Allbox{
+  display: flex;
+  justify-content: space-between;  
+  gap: 16px;
+  margin: 100px auto;
+}
+.About .About_Allbox .About_img{
+  flex: 1;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About .About_Allbox .About_img>figure{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.About .About_Allbox .About_img>figure>img{
+  transform: translateY(-24px);
+}
+.About .About_Allbox .About_R{
+  flex: 1;  
+  padding: 32px;
+}
+.About_R .About_text{
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 50px 5px;
+}
+.About_R .About_text>p>span{
+  color: #9481EB;
+}
+.About_R .About_textlist{
+  display: flex;
+  align-items: center;
+  gap: 50px;    
+
+}
+.About_R .About_textlist .About_list{
+  display: flex;
+  font-size: 32px;  
+  flex: 1;
+  margin: 8px 0;
+  font-size: 2rem;
+  font-weight: 700; 
+}
+.About_R .About_textlist .About_info{
+  display: flex;  
+  align-items: center;    
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  font-weight: 700;  
+  flex: 5;
+  margin: 8px 0;  
+}
+.About_R .About_textlist .About_info>img{
+  width: 24px;
+  height: 24px;    
+}
+.About_R .About_textlist .About_info span{
+  font-size: 16px;
+  color: #AEA9BA;  
+  
+}
+.About_R .About_textlist .About_info .info2{
+  display: flex;
+  align-items: center;
+}
+
