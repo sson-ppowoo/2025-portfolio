@@ -9,7 +9,7 @@ function Header() {
 
           <h1 className='logo'>
             <a href='/'>
-              <img src='./img/main/logo.png' alt='logo'/>
+              <img src='/img/main/logo.png' alt='logo'/>
             </a>
           </h1>
 

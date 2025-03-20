@@ -4,7 +4,7 @@ const careerList = [
   {
     title: "경력",
     info: "이력서 & 자기소개서",
-    icon: "/img/icon/download.png",
+    icon: "/img/icon/Download.png",
   },
   {
     title: "교육",
@@ -28,8 +28,8 @@ const careerList = [
 ];
 const filesDownload = () => {
   const files = [
-    { href: "/files/입사지원서_손민정.pdf", download: "입사지원서_손민정.pdf" },
-    { href: "/files/자기소개서_손민정.pdf", download: "자기소개서_손민정.pdf" },
+    { href: "/files/손민정_이력서.docx", download: "손민정_이력서.docx" },
+    { href: "/files/자기소개서_손민정.docx", download: "자기소개서_손민정.docx" },
   ];
 
   files.forEach((file, index) => {
