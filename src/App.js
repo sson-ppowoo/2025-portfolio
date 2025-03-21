@@ -2,6 +2,7 @@ import './App.css';
 import Header from './component/Header';
 import './css/Header.css';
 import Nav from './component/Nav';
+import './css/Nav.css';
 import Main from './component/Main';
 import './css/Main.css';
 import About from './component/About';
@@ -15,13 +16,14 @@ import Footer from './component/Footer';
 function App() {
   return (
     <div className="App">      
-      <Header/>
+      <Header/>      
       <Main/>
       <Nav/>
       <About/>
       <Skills/>
       <Work/>
       <Contact/>
+      <Footer/>      
     </div>
   );
 }

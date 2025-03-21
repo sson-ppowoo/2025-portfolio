@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
   return (
-    <div id="Main">
+    <section id="Main" className="Main">
       <div className="Main_i">
 
         <div className="Main_Box">
@@ -40,7 +40,7 @@ function Main() {
 
       </div>
       
-    </div>
+    </section>
   );
 }
 

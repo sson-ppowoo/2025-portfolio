@@ -1,7 +1,7 @@
-#Main{
+.Main{
   width: 100%;  
   height: auto;  
-  background-color: #E3D8F2;    
+  background-color: #E3D8F2;      
 }
 .Main_i{
   max-width: 1600px;  
@@ -80,13 +80,13 @@
   gap: 40px;
 }
 .main_text .text_motto{
-  /* font-family: ; */
-  font-size: 2.5rem;
+  font-family: 'SupermercadoOne.ttf';  
+  font-size: 3.5rem;
   font-weight: 900;
 }
 .main_text .text_song{
-  /* font-family: ; */
-  font-size: 1rem;
+  font-family: 'Jua'; 
+  font-size: 1.2rem;
   line-height: 40px;
   font-weight: 700;
 }
@@ -107,7 +107,7 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #9481EB;
+  background-color: #494554;
   border: 2px solid #494554;
   border-radius: 50%;
   top: 15%;  

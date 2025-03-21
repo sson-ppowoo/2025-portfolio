@@ -2,9 +2,9 @@ import React from 'react'
 
 function Work() {
   return (
-    <div>
+    <section id='Work'>
       Work
-    </div>
+    </section>
   )
 }
 

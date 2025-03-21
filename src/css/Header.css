@@ -2,6 +2,8 @@
   background-color: #E3D8F2;  
   width: 100%;  
   height: 100px;  
+  overflow: hidden;  
+  z-index: 1000;  
 }
 .header_i{    
   max-width: 1600px;
@@ -20,73 +22,64 @@
 }
 .header_i .logobox>p{
   width: 80%;
-  /* font-family: ; */
-  font-size: 24px;
+  font-family: 'SupermercadoOne.ttf';    
+  font-size: 1.5rem;
   font-weight: 900;
 }
-.header_i .logo{  
-  width: 20%;
-  width: 65px;
-  height: 65px;  
-  min-height: 50px;  
+.header_i .logo{    
+  max-width: 50px;
+  min-height: 50px;    
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden;    
 }
-.menu{     
-  width: 60%;
+.menu {
+  width: 0%;
   display: flex;
-  justify-content: flex-end;  
+  justify-content: flex-start;
   align-items: center;
-  gap: 64px;       
+  gap: 64px;        
+  overflow: hidden;
+  transform: translateX(-100%);  
+  transition: width 0.5s ease, transform 0.5s ease;
 }
-.menu>li{
-  /* font-family: ; */
-  font-weight: 700;
-  font-size: 16px;
+.menu.open {
+  width: 60%;
+  transform: translateX(35%);    
 }
-.ham{  
-  max-width: 10%; 
-  width: 50px;
-  height: 24px; 
-  display: flex;
-  gap: 6px;
-  flex-direction: column;
+.menuli {  
+  color: #494554;
+  font-family: 'Jua';  
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 20px;
 }
-.line{
-  width: 30px;
-  height: 2px;  
-  border: 2px solid #494554 ;
-  border-radius: 4px;
-}
-.nav{
-  width: auto;
-  height: auto;
-
-}
-.nav .Right_nav_box{
-  position: fixed;
-  top: 50%;
-  right: 0%;
-  transform: translateY(-50%);
-}
-.nav .Right_nav_box .Right_nav{
+.ham {
+  width: 40px;
+  height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;    
-  color: #AEA9BA;      
+  cursor: pointer;
 }
-.nav .Right_nav_box .Right_nav .navli{    
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;  
-  gap: 8px;
-}
-.nav .Right_nav_box .Right_nav .navli::after{      
-  content: '';    
-  width: 32px;
-  height: 2px;
-  border: 1px solid #AEA9BA;
-  background-color: #AEA9BA;
+
+.ham .line {
+  width: 100%;
+  height: 4px;
+  background: #494554;
   border-radius: 2px;  
+  transition: 0.3s;
+}
+
+
+.ham.open .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);  
+}
+
+.ham.open .line:nth-child(2) {
+  opacity: 0;  
+}
+
+.ham.open .line:nth-child(3) {  
+  transform: translateY(-13px) rotate(-45deg);    
 }

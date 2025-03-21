@@ -1,102 +1,190 @@
-.skills{
+.skills {
   width: 100%;
   max-width: 1600px;
   height: auto;
   margin: auto;
 }
-.skills>h2{
+.skills .skills_title {
   width: 100%;
-  height: auto;  
-  font-size: 3rem;
+  height: auto;
+  font-size: 3.5rem;
+  font-family: "SupermercadoOne.ttf";
+  font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 200px auto;
 }
-.skills .skills_Banner{
+.skills .skills_Banner {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  overflow: hidden;      
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
-.skills .skills_Banner>img{
+.skills .skills_Banner > img {
   width: 100%;
   height: auto;
 }
-.skills .skills_AllBox{
-  width: 100%;  
-  margin: 100px auto;
-  border: 2px dashed #494554;  
-  display: flex;    
-}
-.skills .skills_AllBox .skill_box{
-  flex: 1;  
-  padding: 2%;    
-}
-.skills .skills_AllBox .skill_box>h3{ 
-  width: 100%;  
-  height: auto;         
-  font-size: 2rem;
-  font-weight: 700;   
-  margin: 16px auto;
-  transform: translateY(-24px);
-}
-.skills_AllBox .skill_box .icon_container{
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  gap: 24px;           
-}
-.skills_AllBox .skill_box .icon_container .skill_item{    
+.skills .skills_AllBox {
   width: 100%;
-  height: 70px;  
-  display: flex;   
+  margin: 100px auto;
+  border: 2px dashed #494554;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  border-radius: 25px;
+}
+.skills .skills_AllBox .skill_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;  
-  gap: 16px;    
 }
-.skills_AllBox .skill_box .icon_container .skill_item .skill_itemBox{
-  flex: 1;       
-  display: flex;
+.skills .skills_AllBox .skill_box > h3 {
+  width: 100%;
+  height: fit-content;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+.skills_AllBox .skill_box .icon_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   justify-content: center;
-  align-items: center;      
-}
-.skills_AllBox .skill_box .icon_container .skill_item .icon_img{        
-  
-}
-.skills_AllBox .skill_box .icon_container .skill_item .progress_bar{
-  flex: 6;  
-  width: 380px;
-  height: 25px;  
-  background-color: #AEA9BA;
-  border-radius: 25px;
-  box-shadow: 6px 6px 6px #AEA9BA;        
-  position: relative;   
-}
-.progress_bar .progress{
-  height: 25px;  
-  background-color: #FDECA6;
-  border-radius: 25px;
-  position: relative;   
-}
-.progress_bar .progress .progress_moon{  
-  position: absolute;  
-  top: -50%;    
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-.progress_bar .progress .progress_moon .learning{          
-  position: absolute;  
-  top: -50%;
-  left: 0%;
-  font-size: 16px;
+  align-items: center;
+  gap: 16px;
+  font-family: "Jua";
+  font-size: 1rem;
   font-weight: 500;
 }
-.progress_bar .progress .progress_moon .moon_icon{
-  width: 85%;    
+.skills_AllBox .skill_box .icon_container .skill_item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 8px auto;
 }
+.skills_AllBox .skill_box .icon_container .skill_item .skill_itemBox {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+.skill_itemBox .icon_img {
+}
+.skill_itemBox .icon_title {
+}
+.progress_bar {
+  flex: 3;
+  width: 350px;
+  height: 25px;
+  display: flex;
+  background-color: #aea9ba;
+  border-radius: 25px;
+  box-shadow: 4px 4px px #aea9ba;
+  position: relative;
+}
+.progress_bar .progress {
+  height: 25px;
+  background-color: #fdeca6;
+  border-radius: 25px;
+  position: relative;
+}
+.progress_bar .progress .progress_moon {
+  position: absolute;
+  top: -50%;
+  right: -5%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress_bar .progress .progress_moon .learning {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.progress_bar .progress .progress_moon .moon_icon {
+  width: 80%;
+  height: 80%;
+}
+
+.Toggle {
+  position: absolute;
+  width: 50%;
+  bottom: 7%;
+  right: 2%;
+  border: 2px dashed #494554;
+  border-radius: 25px;
+  padding: 1%;
+  font-family: "Jua.";
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.Toggle .toggle_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.Toggle .toggle_item .progress_bar {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  position: relative;
+  margin: 16px auto;
+}
+.Toggle .toggle_item .progress_bar .progress_moon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Toggle .toggle_item .progress_bar .progress_moon .learning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.Toggle .toggle_item .progress_bar .progress_moon .moon_icon {
+  width: 60%;
+  height: 60%;
+  align-content: center;
+}
+.Toggle .Toggle_Text {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 16px auto;
+}
+.Toggle_icon{  
+  position: absolute;
+  bottom: 1%;
+  right: 6%;
+  animation: move_moon 3s infinite ease;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  }

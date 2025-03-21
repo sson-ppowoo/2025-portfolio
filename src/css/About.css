@@ -3,11 +3,14 @@
   max-width: 1600px;
   height: auto;
   margin: 100px auto;
+  overflow: hidden;  
 }
 .About .About_title{
   width: 100%;
   height: auto;  
-  font-size: 3rem;
+  font-family: 'SupermercadoOne.ttf';  
+  font-size: 3.5rem;
+  font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,25 +38,24 @@
 }
 .About .About_Allbox .About_R{
   flex: 1;  
-  padding: 32px;
+  padding: 24px;    
+  margin: 8px auto;
 }
 .About_R .About_text{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  padding: 50px 5px;
+  padding: 50px 0;  
 }
 .About_R .About_text>p>span{
-  color: #9481EB;
+  color: #9481EB;  
 }
 .About_R .About_textlist{
   display: flex;
   align-items: center;
-  gap: 50px;    
-
+  gap: 16px;
 }
 .About_R .About_textlist .About_list{
-  display: flex;
-  font-size: 32px;  
+  display: flex;  
   flex: 1;
   margin: 8px 0;
   font-size: 2rem;
@@ -66,7 +68,10 @@
   font-size: 1.3rem;
   font-weight: 700;  
   flex: 5;
-  margin: 8px 0;  
+  margin: 8px ;  
+}
+.About_R .About_textlist .About_info p{
+  margin: 8px 0;
 }
 .About_R .About_textlist .About_info>img{
   width: 24px;

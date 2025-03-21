@@ -20,4 +20,19 @@ img{
 }
 body{
   color: #494554;
+  font-family: 'NotoSansKR-Medium';    
+  background-color: #FBF8FF;  
+}
+
+@font-face {
+  font-family: 'Jua';  
+  src: url('../public/font/Jua.ttf') format('truetype');  
+}
+@font-face {
+  font-family: 'NotoSansKR-Medium';  
+  src: url('../public/font/NotoSansKR-Medium.ttf') format('truetype');  
+}
+@font-face {
+  font-family: 'SupermercadoOne.ttf';  
+  src: url('../public/font/SupermercadoOne.ttf') format('truetype');  
 }

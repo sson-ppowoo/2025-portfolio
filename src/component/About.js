@@ -5,6 +5,8 @@ const careerList = [
     title: "경력",
     info: "이력서 & 자기소개서",
     icon: "/img/icon/Download.png",
+    info2:"외식/식품 프랜차이즈 경력 10년차",
+    day2: "2012.03~2024.07",
   },
   {
     title: "교육",
@@ -19,12 +21,12 @@ const careerList = [
     day2: "25.04.10(필기예정)",
   },
   {
-    title: "기타활동",
-    info: "구미 스트릿 주짓수 금메달",
-    info2: "대구 스트릿 주짓수 금메달",
-    day: "24.04",
-    day2: "24.06",
-  },
+    title: "기타",
+    info: "스트릿 주짓수(대구대회) 여성 화이트 -69.0kg 금메달",
+    info2: "스트릿 주짓수(구미대회) 여성 비기너 -64.0kg금메달",
+    day: "24.06.27",
+    day2: "24.04.28",
+  }
 ];
 const filesDownload = () => {
   const files = [
@@ -44,7 +46,7 @@ const filesDownload = () => {
 
 function About() {
   return (
-    <div className="About">
+    <section id="About" className="About">
       <h2 className="About_title">About</h2>
 
       <div className="About_Allbox">
@@ -95,7 +97,7 @@ function About() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

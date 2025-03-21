@@ -1,0 +1,94 @@
+.nav {
+  width: fit-content;
+  height: fit-content;
+  font-family: 'Jua';  
+  overflow: hidden;  
+  z-index: 1000;    
+}
+.nav .Right_nav_box{
+  position: fixed;
+  top: 50%;
+  right: -16px;  
+  transform: translateY(-50%);    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav .Right_nav_box .Right_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #AEA9BA;
+  gap: 8px;  
+  position: relative;
+}
+
+.nav .Right_nav_box .Right_nav .navli {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav .Right_nav_box .Right_nav .navli::after {
+  content: '';
+  width: 48px;
+  height: 2px;
+  border: 1px solid #AEA9BA;
+  background-color: #AEA9BA;
+  border-radius: 2px;
+}
+.nav .Right_nav_box .Right_nav .navli.active {  
+  transform: translateX(-16px);    
+  color: #494554;   
+}
+
+.nav .Right_nav_box .Right_nav .navli.active::after {
+  background-color: #494554;   
+}
+
+.Right_nav_box .Top{
+  width: 50px;
+  height: 50px;
+  background-image: url('../../public/img/main/moon.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  color: #494554;    
+  cursor: pointer;  
+  position: absolute;
+  top: 75%;  
+  margin-top: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0px 0px 4px 4px #AEA9BA;  
+  animation: move_moon 3s infinite ease-in;
+  transition: 0.5s ease;
+}
+.Right_nav_box .Top.active{
+  box-shadow: 0px 0px 4px 4px #494554;        
+  color: #AEA9BA;
+}
+@keyframes move_moon {
+  0% {
+    transform: translateY(0px)
+  }
+  25% {
+    transform: translateY(-4px)
+  }
+  50% {
+    transform: translateY(0)
+  }
+  75% {
+    transform: translateY(-4px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
