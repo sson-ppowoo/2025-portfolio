@@ -52,7 +52,7 @@ function About() {
       <div className="About_Allbox">
         <div className="About_img">
           <figure>
-            <img src="/img/main/증명사진1.jpg" alt="증명사진" />
+            <img src="/img/IdPicture/2025 (1).jpg" alt="증명사진" />
           </figure>
         </div>
 

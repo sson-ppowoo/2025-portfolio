@@ -10,6 +10,7 @@ import './css/About.css';
 import Skills from './component/Skills';
 import './css/Skills.css';
 import Work from './component/Work';
+import './css/Work.css';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
 

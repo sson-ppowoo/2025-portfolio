@@ -34,7 +34,7 @@
   overflow: hidden;
 }
 .About .About_Allbox .About_img>figure>img{
-  transform: translateY(-24px);
+  transform: translate(10%);
 }
 .About .About_Allbox .About_R{
   flex: 1;  

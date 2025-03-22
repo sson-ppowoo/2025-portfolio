@@ -23,7 +23,10 @@ body{
   font-family: 'NotoSansKR-Medium';    
   background-color: #FBF8FF;  
 }
-
+::selection {
+  background-color: #9481EB;
+  color: #FBF8FF;
+}
 @font-face {
   font-family: 'Jua';  
   src: url('../public/font/Jua.ttf') format('truetype');  

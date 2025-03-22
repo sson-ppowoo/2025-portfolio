@@ -1,0 +1,99 @@
+#Work{
+  width: 100%;
+  max-width: 1600px;
+  margin: 100px auto;
+}
+#Work>h2{  
+  font-family: 'SupermercadoOne.ttf';
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 150px auto;  
+  text-align: center;
+  align-content: center;
+}
+#Work .Work_container{
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+#Work .Work_container .Work_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;      
+}
+#Work .Work_container .slide_btn{  
+  cursor: pointer;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  right: 20%;   
+  transform: translateY(-60px);
+}
+#Work .Work_container .slide_btn>figure{
+  width: 24px;
+  height: 40px;  
+  right: 25%;  
+  margin: 0 16px;
+}
+#Work .Work_container .Work_item .Work_R{
+  width: calc(100%-148px)/2;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  align-items: center;
+  font-weight: 700;
+  gap: 16px;
+}
+#Work .Work_container .Work_item .Work_R .Work_image{
+  width: 100%;
+  height: 60vh;  
+  border: 2px solid #494554;  
+  border-right: none;
+  overflow: scroll;
+}
+#Work .Work_container .Work_item .Work_R>p{
+  color: #AEA9BA;
+  font-size: 1rem;  
+}
+#Work .Work_container .Work_item .Work_R>span{  
+  font-size: 1.2rem;      
+}
+#Work .Work_container .Work_item .Work_description{
+  width: calc(100%-148px)/2;
+  height: 60vh;
+  border: 2px dashed #9481EB;  
+  border-left: none;
+  overflow: scroll;  
+  padding: 1%;
+  align-self: flex-start;
+}
+.Work_description .Work_title,
+.Work_description .Work_Time,
+.Work_description .design .design_box,
+.Work_description .useTools .tools_title,
+.Work_description .uiux .Work_UIUX{
+  display: flex;  
+  align-items: center;      
+  margin: 16px auto;  
+}
+.design_Element>p{
+  margin-bottom: 8px;  
+}
+.Work_description .useTools .tools_icon{
+  display: flex;  
+}
+.Work_description .Work_title>h3,
+.Work_description .design .design_box>h3,
+.Work_description .useTools .tools_title>h3,
+.Work_description .uiux .Work_UIUX>h3{
+  font-size: 1.5rem;    
+}
+.Work_description .Work_title>span,
+.Work_description .design .design_box>span,
+.Work_description .useTools .tools_title>span,
+.Work_description .uiux .Work_UIUX>span{
+  font-size: 1rem;
+  color: #AEA9BA;    
+}
