@@ -4,7 +4,7 @@ function Work() {
   const projects = [
     {
       id: 1,
-      title: "공차 메인페이지 클론코딩",
+      title: "공차 메인페이지 클론코딩 2024",
       title_en: "[Gongcha Main Page Clone Coding]",
       Time: "제작기간 : 96시간 [4일] | 기여도 : 100% [Personal Work]",
       design_kr: "디자인요소",
@@ -30,12 +30,12 @@ function Work() {
     },
     {
       id: 2,
-      title: "2025 개인 포트폴리오",
+      title: "손민정 개인 포트폴리오 2025",
       title_en: "[2025 Personal Portfolio]",
-      Time: "제작기간 : 120시간 [5일]~ing | 기여도 : 100% [Personal Work]",
+      Time: "제작기간 : 120시간 [5일 : 진행중] | 기여도 : 100% [Personal Work] |",
       design_kr: "디자인요소",
       design_en: "[design Element]",
-      font: ["Jua", "NotoSansKR", "SupermercadoOne.ttf"],
+      font: ["Jua", "NotoSansKR", "SupermercadoOne"],
       color: ["#FBF8FF","#E3D8F2","#9481EB","#AEA9BA","#494554","#FDECA6"],
       Tool_kr: "사용한 툴",
       Tool_en: "[Use Tools]",
@@ -49,7 +49,7 @@ function Work() {
       UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔로서 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 스크롤 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나가며 현재 지속적으로 제작 진행중입니다. [web_Size : 구현 완료. | tablet_Size : 진행중...ing | mobile_Size : 진행중...ing] ",
+        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔로서 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 스크롤 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나가며 현재 지속적으로 제작 진행중입니다.",
       image_web: "/img/work/portfolio_최종_Web.png",
       image_tablet: "/img/work/portfolio_최종_Tap.png",
       image_mobile: "/img/work/portfolio_최종_Mobile.png",
