@@ -12,7 +12,9 @@ import './css/Skills.css';
 import Work from './component/Work';
 import './css/Work.css';
 import Contact from './component/Contact';
+import './css/Contact.css';
 import Footer from './component/Footer';
+import './css/Footer.css';
 
 function App() {
   return (

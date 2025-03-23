@@ -1,0 +1,10 @@
+#Footer{
+  width: 100%;
+  height: auto;
+  margin: 100px auto;
+  margin-bottom: 0px;
+  text-align: center;
+  border-top: 2px dashed #494554;
+  padding: 1%;
+  font-family: 'Jua';  
+}

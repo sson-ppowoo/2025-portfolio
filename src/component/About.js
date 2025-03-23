@@ -30,8 +30,8 @@ const careerList = [
 ];
 const filesDownload = () => {
   const files = [
-    { href: "/files/손민정_이력서.docx", download: "손민정_이력서.docx" },
-    { href: "/files/자기소개서_손민정.docx", download: "자기소개서_손민정.docx" },
+    { href: "/files/입사지원서_손민정.pdf", download: "입사지원서_손민정.pdf" },
+    { href: "/files/자기소개서_손민정.pdf", download: "자기소개서_손민정.pdf" },
   ];
 
   files.forEach((file, index) => {
@@ -52,7 +52,7 @@ function About() {
       <div className="About_Allbox">
         <div className="About_img">
           <figure>
-            <img src="/img/IdPicture/2025 (1).jpg" alt="증명사진" />
+            <img src="/img/IdPicture/2025 AI증명사진 (1).jpg" alt="증명사진" />
           </figure>
         </div>
 

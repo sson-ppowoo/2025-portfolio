@@ -33,9 +33,6 @@
   border-radius: 50%;
   overflow: hidden;
 }
-.About .About_Allbox .About_img>figure>img{
-  transform: translate(10%);
-}
 .About .About_Allbox .About_R{
   flex: 1;  
   padding: 24px;    

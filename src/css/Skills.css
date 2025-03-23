@@ -90,13 +90,13 @@
   height: 25px;
   display: flex;
   background-color: #aea9ba;
-  border-radius: 25px;
-  box-shadow: 4px 4px px #aea9ba;
-  position: relative;
+  box-shadow: 4px 4px 4px 0px #AEA9BA;  
+  border-radius: 25px;  
+  position: relative;  
 }
 .progress_bar .progress {
   height: 25px;
-  background-color: #fdeca6;
+  background-color: #fdeca6;  
   border-radius: 25px;
   position: relative;
 }
@@ -134,6 +134,7 @@
   font-size: 1rem;
   font-weight: 500;
   transition: 0.5s;
+  animation: move_moon 3s infinite ease;
 }
 .Toggle .toggle_item {
   display: flex;

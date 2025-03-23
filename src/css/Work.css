@@ -17,9 +17,10 @@
   position: relative;
 }
 #Work .Work_container .Work_item{
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;      
+  align-items: center;        
 }
 #Work .Work_container .slide_btn{  
   cursor: pointer;      
@@ -28,72 +29,91 @@
   align-items: center;
   position: absolute;
   top: 100%;
-  right: 20%;   
-  transform: translateY(-60px);
+  right: 1%;
+  padding: 16px;    
 }
-#Work .Work_container .slide_btn>figure{
-  width: 24px;
-  height: 40px;  
-  right: 25%;  
+#Work .Work_container .slide_btn>figure{  
+  width: 32px;
+  height: 32px;    
   margin: 0 16px;
 }
 #Work .Work_container .Work_item .Work_R{
-  width: calc(100%-148px)/2;  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;  
-  align-items: center;
+  width: calc(100%-148px)/2;        
   font-weight: 700;
-  gap: 16px;
+  gap: 16px;        
+  height: 70vh;  
+  flex: 1;
 }
 #Work .Work_container .Work_item .Work_R .Work_image{
-  width: 100%;
-  height: 60vh;  
+  width: calc(100%-148px)/2;  
+  height: 70vh;  
   border: 2px solid #494554;  
   border-right: none;
   overflow: scroll;
+  font-size: 2rem;  
+  gap: 16px;      
 }
-#Work .Work_container .Work_item .Work_R>p{
+.img_scroll_container{    
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 24px;
+  background-color: #fff;  
+}
+.Work_image_info{
+  display: flex;
+  flex-direction: column;  
+  gap: 8px;
+  margin: 1%;
   color: #AEA9BA;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
-#Work .Work_container .Work_item .Work_R>span{  
-  font-size: 1.2rem;      
+.Work_image_info>span{
+  font-size: 1.2rem;         
+  color: #494554;
+  cursor: pointer;    
 }
-#Work .Work_container .Work_item .Work_description{
+#Work .Work_container .Work_item .Work_description{  
   width: calc(100%-148px)/2;
-  height: 60vh;
+  height: 70vh;
   border: 2px dashed #9481EB;  
   border-left: none;
   overflow: scroll;  
-  padding: 1%;
-  align-self: flex-start;
+  padding: 2%;
+  align-self: flex-start;  
+  flex: 1;
 }
 .Work_description .Work_title,
 .Work_description .Work_Time,
 .Work_description .design .design_box,
 .Work_description .useTools .tools_title,
-.Work_description .uiux .Work_UIUX{
+.Work_description .uiux .Work_UIUX{    
   display: flex;  
-  align-items: center;      
-  margin: 16px auto;  
+  align-items: center;        
+  margin: 20px auto;  
 }
-.design_Element>p{
-  margin-bottom: 8px;  
+.design_Element>.Element{
+  display: flex;      
+  justify-content: flex-start;
+  align-items: center;    
+  gap: 8px;
+  font-size: 1rem;  
 }
 .Work_description .useTools .tools_icon{
-  display: flex;  
+  display: flex;
+  justify-content:flex-start;
+  gap: 16px;       
 }
 .Work_description .Work_title>h3,
 .Work_description .design .design_box>h3,
 .Work_description .useTools .tools_title>h3,
 .Work_description .uiux .Work_UIUX>h3{
-  font-size: 1.5rem;    
+  font-size: 1.5rem;  
 }
 .Work_description .Work_title>span,
 .Work_description .design .design_box>span,
 .Work_description .useTools .tools_title>span,
 .Work_description .uiux .Work_UIUX>span{
-  font-size: 1rem;
-  color: #AEA9BA;    
+  font-size: 1rem;  
+  color: #AEA9BA;      
 }
