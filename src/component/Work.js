@@ -22,7 +22,7 @@ function Work() {
       UIUX_kr: "UI/UX 개선점",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "기존의 적응형페이지 이용시 모바일페이지 접속에 로딩페이지가 오래출력 되면서 로딩 시간이 길어져, 이 사항을 CSS의 미디어쿼리 이용하여 이미지 디자인은 2가지이지만 반응형처럼 동작하도록 구현하여 로딩시간을 단축하였습니다.  Header&Footer의 Color중 회색요소가 다소 깔끔하지 못하고 구형의 웹 페이지 디자인 느낌을 강하게 주어 서브메뉴의 구현 방식을 수정하고, 색감은 로고와 통일감을 주어 깔끔한 느낌을 주기위해 노력하였습니다.",
+        "기존의 적응형페이지 이용시 모바일페이지 접속에 로딩페이지가 오래출력 되면서 로딩 시간이 길어져, 이 사항을 CSS의 미디어쿼리 이용하여 이미지 디자인은 2가지이지만 반응형처럼 동작하도록 구현하여 로딩시간을 단축하였습니다.  Header&Footer의 Color중 회색요소가 다소 깔끔하지 못하고 구형의 웹 페이지 디자인 느낌을 강하게 주어 서브메뉴의 구현 방식을 수정하고, 색감은 로고와 통일감을 주어 깔끔한 느낌을 주기위해 노력하였습니다. 좌측 스크롤 이미지는 실제 작업물 이미지 입니다.",
       image_web: "/img/work/GongCha_Web.png",
       image_tablet: "/img/work/GongCha_Tap.png",
       image_mobile: "/img/work/GongCha_Mobile.png",
@@ -49,7 +49,7 @@ function Work() {
       UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔로서 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 스크롤 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나갔습니다.",
+        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔로서 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 스크롤 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나가며 현재 지속적으로 제작 진행중입니다. [web_Size : 구현 완료. | tablet_Size : 진행중...ing | mobile_Size : 진행중...ing] ",
       image_web: "/img/work/portfolio_최종_Web.png",
       image_tablet: "/img/work/portfolio_최종_Tap.png",
       image_mobile: "/img/work/portfolio_최종_Mobile.png",
