@@ -32,7 +32,7 @@ function Work() {
       id: 2,
       title: "2025 개인 포트폴리오",
       title_en: "[2025 Personal Portfolio]",
-      Time: "제작기간 : 120시간 [5일] | 기여도 : 100% [Personal Work]",
+      Time: "제작기간 : 120시간 [5일]~ing | 기여도 : 100% [Personal Work]",
       design_kr: "디자인요소",
       design_en: "[design Element]",
       font: ["Jua", "NotoSansKR", "SupermercadoOne.ttf"],
@@ -43,7 +43,7 @@ function Work() {
       Tools_img: [
         "img/icon/skills_icon/1_html5.png",
         "img/icon/skills_icon/2_css3.png",
-        "img/icon/skills_icon/3_JavaScript.png",
+        "img/icon/skills_icon/3_JavaScript.png",                
         "img/icon/skills_icon/5_React.png",
       ],
       UIUX_kr: "UI/UX",
