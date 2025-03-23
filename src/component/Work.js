@@ -95,12 +95,7 @@ function Work() {
                 </figure>
               </div>
               <div className="Work_image_info">
-                <p>스크롤하여 페이지를 확인하세요</p>
-                <span>
-                  <a href={Work.href} target="_blank" rel="noreferrer">
-                    자세히 보러 가기👀
-                  </a>
-                </span>
+                <p>스크롤하여 페이지를 확인하세요</p>                
               </div>
             </div>
 
@@ -171,6 +166,14 @@ function Work() {
                   <span>{Work.UIUX_en}</span>
                 </div>
                 <p>{Work.description}</p>
+              </div>
+
+              <div className="item_more">
+                <span>
+                    <a href={Work.href} target="_blank" rel="noreferrer">
+                      자세히 보러 가기👀
+                    </a>
+                </span>
               </div>
             </div>
           </div>

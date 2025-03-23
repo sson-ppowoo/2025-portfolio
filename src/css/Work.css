@@ -1,13 +1,13 @@
 #Work{
   width: 100%;
   max-width: 1600px;
-  margin: 100px auto;
+  margin: 200px auto;
 }
 #Work>h2{  
   font-family: 'SupermercadoOne.ttf';
   font-size: 3rem;
   font-weight: 900;
-  margin: 150px auto;  
+  margin: 200px auto;  
   text-align: center;
   align-content: center;
 }
@@ -29,7 +29,7 @@
   align-items: center;
   position: absolute;
   top: 100%;
-  right: 1%;
+  right: 3%;
   padding: 16px;    
 }
 #Work .Work_container .slide_btn>figure{  
@@ -61,24 +61,17 @@
   background-color: #fff;  
 }
 .Work_image_info{
-  display: flex;
-  flex-direction: column;  
-  gap: 8px;
-  margin: 1%;
+  text-align: center;
+  margin: 16px auto;
   color: #AEA9BA;
-  font-size: 1rem;
-}
-.Work_image_info>span{
-  font-size: 1.2rem;         
-  color: #494554;
-  cursor: pointer;    
+  font-size: 1.2rem;
 }
 #Work .Work_container .Work_item .Work_description{  
   width: calc(100%-148px)/2;
   height: 70vh;
   border: 2px dashed #9481EB;  
   border-left: none;
-  overflow: scroll;  
+  overflow: hidden;  
   padding: 2%;
   align-self: flex-start;  
   flex: 1;
@@ -90,7 +83,15 @@
 .Work_description .uiux .Work_UIUX{    
   display: flex;  
   align-items: center;        
+  margin: 20px auto;    
+}
+.Work_description .item_more{
   margin: 20px auto;  
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.Work_description .item_more:hover{
+  color: #9481EB;
 }
 .design_Element>.Element{
   display: flex;      
