@@ -26,7 +26,7 @@ function Work() {
       image_web: "/img/work/GongCha_Web.png",
       image_tablet: "/img/work/GongCha_Tap.png",
       image_mobile: "/img/work/GongCha_Mobile.png",
-      href: "https://www.gong-cha.co.kr/brand/"
+      href: "https://gong-cha-clone.vercel.app/"
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ function Work() {
       image_web: "/img/work/portfolio_최종_Web.png",
       image_tablet: "/img/work/portfolio_최종_Tap.png",
       image_mobile: "/img/work/portfolio_최종_Mobile.png",
-      href: "https://portfolio-sson-ppowoo.vercel.app/"
+      href: "https://2025-portfolio-henna.vercel.app/"
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
