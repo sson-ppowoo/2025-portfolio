@@ -53,21 +53,13 @@ const Icon = [
   {
     id: 7,
     menu: "Web_publishing",
-    title: "React Redux",
+    title: "Redux Tollkit",
     src: `/img/icon/skills_icon/7_react_redux.png`,
     alt: "React Redux_icon",
     progress: 60,
-  },
+  },  
   {
     id: 8,
-    menu: "Web_publishing",
-    title: "React Tollkit",
-    src: `/img/icon/skills_icon/8_redux_tollkit.png`,
-    alt: "React Tollkit_icon",
-    progress: 60,
-  },
-  {
-    id: 9,
     menu: "Web_publishing",
     title: "React Query",
     src: `/img/icon/skills_icon/9_react-query.png`,
@@ -75,7 +67,7 @@ const Icon = [
     progress: 60,
   },
   {
-    id: 10,
+    id: 9,
     menu: "Desing",
     title: "Figma",
     src: `/img/icon/skills_icon/10_figma.png`,
@@ -83,7 +75,7 @@ const Icon = [
     progress: 80,
   },
   {
-    id: 11,
+    id: 10,
     menu: "Desing",
     title: "PhotoShop",
     src: `/img/icon/skills_icon/11_photoshop.png`,
@@ -91,7 +83,7 @@ const Icon = [
     progress: 70,
   },
   {
-    id: 12,
+    id: 11,
     menu: "Desing",
     title: "Illustrator",
     src: `/img/icon/skills_icon/12_illustrator.png`,
@@ -100,7 +92,7 @@ const Icon = [
   },
 
   {
-    id: 13,
+    id: 12,
     menu: "PaperWork",
     title: "Excel",
     src: `/img/icon/skills_icon/13_excel2.png`,
@@ -108,7 +100,7 @@ const Icon = [
     progress: 80,
   },
   {
-    id: 14,
+    id: 13,
     menu: "PaperWork",
     title: "Word",
     src: `/img/icon/skills_icon/14_word.png`,
@@ -116,7 +108,7 @@ const Icon = [
     progress: 80,
   },
   {
-    id: 15,
+    id: 14,
     menu: "PaperWork",
     title: "PowerPoint",
     src: `/img/icon/skills_icon/15_powerpoint.png`,
@@ -124,25 +116,25 @@ const Icon = [
     progress: 80,
   },
   {
-    id: 16,
+    id: 15,
     menu: "Toggle",
     Text: ": 자신감을 가지고 사용 할 수 있습니다.",
     progress: 90,
   },
   {
-    id: 17,
+    id: 16,
     menu: "Toggle",
     Text: ": 약간의 검색이 필요하지만 자신있게 사용 할 수 있습니다.",
     progress: 80,
   },
   {
-    id: 18,
+    id: 17,
     menu: "Toggle",
     Text: ": 검색이 필요하고 작업시간이 다소 걸리지만 사용 할 수 있습니다.",
     progress: 70,
   },
   {
-    id: 19,
+    id: 18,
     menu: "Toggle",
     text: ": 검색이 필요하고 작업시간이 꽤 걸립니다. 좀 더 심화 된 학습이 필요한 부분입니다.",
     progress: 60,

@@ -50,7 +50,16 @@
   height: 70vh;  
   overflow: hidden;
   font-size: 2rem;  
-  gap: 16px;      
+  gap: 16px;        
+  position: relative;
+}
+#Work .Work_container .slide_number{    
+  position: absolute;
+  top: 100%;
+  left: 3%;
+  padding: 16px;      
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .img_scroll_container{    
   display: flex;

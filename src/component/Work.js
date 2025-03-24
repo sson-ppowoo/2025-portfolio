@@ -49,7 +49,7 @@ function Work() {
       UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔로서 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 스크롤 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나가며 현재 지속적으로 제작 진행중입니다.",
+        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔에 대한 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임 이미지입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나가며 현재 지속적으로 제작 진행중입니다.",
       image_web: "/img/work/portfolio_최종_Web.png",
       image_tablet: "/img/work/portfolio_최종_Tap.png",
       image_mobile: "/img/work/portfolio_최종_Mobile.png",
@@ -185,6 +185,9 @@ function Work() {
           <figure onClick={() => nextSlide()}>
             <img src="/img/icon/arrow-right-long-solid.svg" alt="다음으로" />
           </figure>
+        </div>
+        <div className="slide_number">
+          {projects[currentIndex].id} / {totalProjects}
         </div>
       </div>
     </section>
