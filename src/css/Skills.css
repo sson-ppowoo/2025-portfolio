@@ -29,21 +29,22 @@
   height: auto;
 }
 .skills .skills_AllBox {
+  background-color: aquamarine;
   width: 100%;
   margin: 100px auto;
   border: 2px dashed #494554;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);  
   justify-content: center;
   gap: 16px;
   position: relative;
   border-radius: 25px;
 }
-.skills .skills_AllBox .skill_box {
+.skills .skills_AllBox .skill_box {      
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center;  
 }
 .skills .skills_AllBox .skill_box > h3 {
   width: 100%;

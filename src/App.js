@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './component/Header';
 import './css/Header.css';
+import './css/MQ.css';
 import Nav from './component/Nav';
 import './css/Nav.css';
 import Main from './component/Main';

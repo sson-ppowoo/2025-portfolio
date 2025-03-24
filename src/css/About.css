@@ -23,6 +23,7 @@
 }
 .About .About_Allbox .About_img{
   flex: 1;  
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +32,11 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  background-color: #767585;
   overflow: hidden;
+}
+.About .About_Allbox .About_img>figure>img{  
+  transform: translateY(-6%) scale(0.8);
 }
 .About .About_Allbox .About_R{
   flex: 1;  
@@ -67,20 +72,21 @@
   flex: 5;
   margin: 8px ;  
 }
-.About_R .About_textlist .About_info p{
+.About_R .About_textlist .About_info p{  
   margin: 8px 0;
 }
 .About_R .About_textlist .About_info>img{
   width: 24px;
-  height: 24px;    
+  height: 24px;      
 }
 .About_R .About_textlist .About_info span{
-  font-size: 16px;
+  font-size: 16px;  
   color: #AEA9BA;  
   
 }
 .About_R .About_textlist .About_info .info2{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 

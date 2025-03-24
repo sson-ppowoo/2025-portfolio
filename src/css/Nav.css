@@ -1,11 +1,10 @@
 .nav {
   width: fit-content;
   height: fit-content;
-  font-family: 'Jua';  
-  overflow: hidden;  
+  font-family: 'Jua';
   z-index: 1000;    
 }
-.nav .Right_nav_box{
+.nav .Right_nav_box{  
   position: fixed;
   top: 50%;
   right: -16px;  

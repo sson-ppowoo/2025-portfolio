@@ -71,7 +71,7 @@
   height: 70vh;
   border: 2px dashed #9481EB;  
   border-left: none;
-  overflow: hidden;  
+  overflow: scroll;  
   padding: 2%;
   align-self: flex-start;  
   flex: 1;

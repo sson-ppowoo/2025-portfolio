@@ -193,8 +193,8 @@ function Skills() {
       </figure>
 
       <div className="skills_AllBox">
-        {skillBox.map((skill) => (
-          <div key={skill} className="skill_box">
+        {skillBox.map((skill, idx) => (
+          <div key={idx} className="skill_box">
             <h3>{skill}</h3>
 
             <div className="icon_container">

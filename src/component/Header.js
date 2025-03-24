@@ -21,7 +21,7 @@ function Header() {
       <div className="header_i">
         <div className="logobox">
           <h1 className="logo">
-            <a href="/">
+            <a href="https://2025-portfolio-henna.vercel.app/">
               <img src="/img/main/logo.png" alt="logo" />
             </a>
           </h1>

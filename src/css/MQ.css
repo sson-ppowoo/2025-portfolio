@@ -1,0 +1,84 @@
+@media (max-width: 1800px) {
+  .nav {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1600px) {  
+  .Main_Box .eclipse_container {
+    background: none;
+    box-shadow: none;
+  }
+  .eclipse_container .moon {
+    animation: moon_shadow 4s infinite alternate;
+  }
+  @keyframes moon_shadow {
+    0% {
+      box-shadow: -8px 10px 10px rgba(73, 69, 84, 0.3); /* 약한 그림자 */
+    }
+    25% {
+      box-shadow: -4px 10px 20px rgba(73, 69, 84, 0.5); /* 강한 그림자 */
+    }
+    50% {
+      box-shadow: 0px 10px 30px rgba(73, 69, 84, 0.7); /* 더 강한 그림자 */
+    }
+    75% {
+      box-shadow: 4px 10px 20px rgba(73, 69, 84, 0.5); /* 강한 그림자 */
+    }
+    100% {
+      box-shadow: 8px 10px 10px rgba(73, 69, 84, 0.3); /* 약한 그림자 */
+    }
+  }
+  .eclipse_container .eclipse {
+    display: none;
+  }
+}
+
+  @media (max-width: 1400px) {  
+    .menu.open {      
+      transform: translateX(5%);    
+    }    
+  }
+
+  
+  @media (max-width: 1200px) {
+    .About_R .About_textlist .About_list {
+      font-size: 1.5rem !important;
+    }
+    .About_R .About_textlist .About_info {
+      font-size: 1rem !important;
+    }
+    .About .About_Allbox .About_img > figure {
+      transform: scale(0.8);
+    }      
+    .menu {
+      gap: 16px;  
+    }
+    .menu.open {
+      position: absolute;
+      width: 10%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      top: 100px;
+      right: 16px;      
+      background-color: #494554;            
+      border-radius: 15px;
+    }      
+    .menuli {  
+      color: #E3D8F2;
+    }      
+    .nav .Right_nav_box {
+      position: fixed;
+      top: 20vh !important;
+      right: 4% !important;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+  }
+

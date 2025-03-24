@@ -21,7 +21,7 @@ function Main() {
 
             <div className="text_song">
               <p>
-                sson_ppowoo<br/>“ 언제 시작했는가 보다, 끝까지 가는것이 중요하다고생각해요 ”<br/>
+                sson_ppowoo<br/>" 언제 시작했는가 보다, 끝까지 가는것이 중요하다고생각해요 "<br/>
                 blooming <br/>" 새로운 날, 꽃을 피워가며, 나는 또 다른 나를 만나러 가 "<br/>
                 이름에게 <br/>" 세상은 언제나 변하고, 그 속에서 나는 나를 찾아가 "<br/>
               </p>
