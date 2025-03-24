@@ -86,17 +86,17 @@ function Work() {
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
                 <figure className="img_scroll_container">
-                  <span>Web_Size</span>
+                  {/* <span>Web_Size</span> */}
                   <img src={Work.image_web} alt={Work.title} />
-                  <span>Tablet_Size</span>
+                  {/* <span>Tablet_Size</span>
                   <img src={Work.image_tablet} alt={Work.title} />
                   <span>Mobile_Size</span>
-                  <img src={Work.image_mobile} alt={Work.title} />
+                  <img src={Work.image_mobile} alt={Work.title} /> */}
                 </figure>
               </div>
-              <div className="Work_image_info">
+              {/* <div className="Work_image_info">
                 <p>스크롤하여 페이지를 확인하세요</p>                
-              </div>
+              </div> */}
             </div>
 
             <div

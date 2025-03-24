@@ -1,7 +1,7 @@
 #Work{
   width: 100%;
   max-width: 1600px;
-  margin: 200px auto;
+  margin: 200px auto;  
 }
 #Work>h2{  
   font-family: 'SupermercadoOne.ttf';
@@ -14,7 +14,8 @@
 #Work .Work_container{
   width: 100%;
   margin: auto;
-  position: relative;
+  position: relative;    
+  box-shadow: 4px 4px 10px #494554;
 }
 #Work .Work_container .Work_item{
   width: 100%;
@@ -47,9 +48,7 @@
 #Work .Work_container .Work_item .Work_R .Work_image{
   width: calc(100%-148px)/2;  
   height: 70vh;  
-  border: 2px solid #494554;  
-  border-right: none;
-  overflow: scroll;
+  overflow: hidden;
   font-size: 2rem;  
   gap: 16px;      
 }
@@ -68,10 +67,9 @@
 }
 #Work .Work_container .Work_item .Work_description{  
   width: calc(100%-148px)/2;
-  height: 70vh;
-  border: 2px dashed #9481EB;  
-  border-left: none;
-  overflow: scroll;  
+  height: 70vh;  
+  border-left: 2px dashed #494554;  
+  overflow: hidden;  
   padding: 2%;
   align-self: flex-start;  
   flex: 1;
