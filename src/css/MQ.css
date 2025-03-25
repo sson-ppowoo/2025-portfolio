@@ -11,7 +11,7 @@
     box-shadow: none;
   }
   .eclipse_container .moon {
-    animation: moon_shadow 4s infinite alternate linear;
+    animation: moon_shadow 4s infinite alternate;
   }
   @keyframes moon_shadow {
     0% {
@@ -61,63 +61,120 @@
     .Main_Box .eclipse_container{
       width: 500px;
       height: 500px;      
-    }   
-    .About_R .About_textlist .About_list {
-      font-size: 1.5rem !important;
-    }
-    .About_R .About_textlist .About_info {
-      font-size: 1rem !important;
-    }
+    }           
     .About .About_Allbox .About_img > figure {
       transform: scale(0.8);
     }      
     .menu {
       gap: 16px;  
-    }   
+    }    
+    .nav .Right_nav_box {
+      position: fixed;
+      top: 20vh !important;
+      right: 4% !important;
+    }
   }
 
-
-  @media (max-width: 1024px) {      
-    .menu.open{
-      display: none;            
-    }
-    .ham{
-      display: none;
-    }
+  @media (max-width: 1024px) {
+    .header{position: relative;}
     .Main_Box{
       flex-direction: column;      
-    } 
-    .nav{
+    }     
+    .menu.open {      
+      z-index: 9999;      
+      position: fixed;
+      width: 10%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      top: 100px;
+      right: 16px;      
+      background-color: transparent;            
+      border-radius: 15px;      
+    }      
+    .menuli{
+      color: #E3D8F2;
+      font-size: 1rem;
+    }
+    .menu.open .menuli{  
+      color: #494554;
+    }             
+    .menuli:first-child{
+      display: block;  
+    }
+    .Close{
       display: block;
-      z-index: 9999;
+      color: #494554;
+    }
+    .nav {
+      display: block;
     }
     .nav .Right_nav_box{
-      top: 22vh !important;
-      right: -16px !important;  
-    }  
-    .nav .Right_nav_box .Right_nav{
-      gap: 16px !important;        
-      font-size: 1.2rem !important;
-      background-color: #494554;
-      padding: 8px;      
-      border-radius: 10px;
+      top: 90% !important;
+      z-index: 9999;
     }
-    .nav .Right_nav_box .Right_nav .navli{      
-      color: #FBF8FF;                  
-    }
-    .nav .Right_nav_box .Right_nav .navli::after{
-      border: 1px solid #FBF8FF !important;
-      background-color: #FBF8FF !important;    
-    }
-    .Right_nav_box .Top{
-      top: -16vh !important;  
+    .nav .Right_nav_box .Right_nav .navli{
+      display: none !important;      
+    }      
+    .text_motto{
+      font-size: 4.5rem !important;
+      text-align: center;
     }
     .main_text .text_song{
+      display: none !important;
+    }
+    .scroll_icon{
+      margin-top: 200px;
+    }
+    .About_Allbox{
+      flex-direction: column;
+
+    }
+    .About .About_Allbox .About_img{
+      transform: scale(1);      
+    }     
+    .About_R .About_text>p>br{
+      display: none;      
+    }     
+    
+    .About_R .About_text{      
+      font-size: 2rem !important;  
+                       
+    }               
+    .About_R .About_textlist .About_list{
+      font-size: 1.8rem !important;                          
+    }
+    .About_R .About_textlist .About_info{
+      font-size: 1.5rem !important;    
+    }
+    .skills .skills_AllBox{
+      display: grid;            
+    }    
+    .skills .skills_AllBox .skill_box .icon_container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .progress_bar{
+      width: 100px !important;   
+      height: 16px !important;
+    }
+    .progress{
+      height: 16px !important;
+    }
+    .learning{
+      font-size: 0.8rem !important;   
+      top: 60% !important;
+      right: 0% !important;   
+    }
+    .skills_AllBox .skill_box .icon_container .skill_item{
+      flex-direction: column;
+    }
+    .moon_icon{
       display: none;
     }
-    .text_motto {
-
-    }
-
   }
+
+
 

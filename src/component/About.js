@@ -59,7 +59,7 @@ function About() {
         <div className="About_R">
           <div className="About_text">
             <p>
-              안녕하십니까.<br/>기본에 충실하면서도, 더 나은 퍼블리싱을 고민합니다.
+              안녕하십니까.<br className="br" />기본에 충실하면서도, 더 나은 퍼블리싱을 고민합니다.
               새로운 기술을 배우고 적용하는 과정에서 성장을 느낍니다. 새로운
               코드와 툴을 학습하는 즐거움으로 웹을 만들어가는 신입 웹 퍼블리셔 
               <span> 손민정 </span>입니다.

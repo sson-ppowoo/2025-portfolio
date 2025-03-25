@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);  
+  const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const MenuClick = (menu) => {    
-    setActiveMenu(menu);    
+  const MenuClick = (menu) => {
+    setActiveMenu(menu);
     const section = document.getElementById(menu);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -29,38 +29,45 @@ function Header() {
         </div>
 
         <ul className={`menu ${menuOpen ? "open" : ""}`}>
+         
           <li
-            className={`menuli ${activeMenu === 'Main' ? 'active' : ''}`}
-            onClick={() => MenuClick('Main')}
+            className={`menuli ${activeMenu === "Main" ? "active" : ""}`}
+            onClick={() => MenuClick("Main")}
           >
             Main
           </li>
           <li
-            className={`menuli ${activeMenu === 'About' ? 'active' : ''}`}
-            onClick={() => MenuClick('About')}
+            className={`menuli ${activeMenu === "About" ? "active" : ""}`}
+            onClick={() => MenuClick("About")}
           >
             About
           </li>
           <li
-            className={`menuli ${activeMenu === 'Skills' ? 'active' : ''}`}
-            onClick={() => MenuClick('Skills')}
+            className={`menuli ${activeMenu === "Skills" ? "active" : ""}`}
+            onClick={() => MenuClick("Skills")}
           >
             Skills
           </li>
           <li
-            className={`menuli ${activeMenu === 'Work' ? 'active' : ''}`}
-            onClick={() => MenuClick('Work')}
+            className={`menuli ${activeMenu === "Work" ? "active" : ""}`}
+            onClick={() => MenuClick("Work")}
           >
             Work
           </li>
           <li
-            className={`menuli ${activeMenu === 'Contact' ? 'active' : ''}`}
-            onClick={() => MenuClick('Contact')}
+            className={`menuli ${activeMenu === "Contact" ? "active" : ""}`}
+            onClick={() => MenuClick("Contact")}
           >
             Contact
           </li>
+          <li
+            className={`Close ${activeMenu === "Close" ? "active" : ""}`}
+            onClick={() => toggleMenu("Close")}
+          >
+            Close
+          </li>
         </ul>
-        
+
         <div className={`ham ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
           <div className="line"></div>
           <div className="line"></div>
