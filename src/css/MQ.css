@@ -46,6 +46,9 @@
 }
 
 @media (max-width: 1335px) {
+  .menu {
+    gap: 16px;
+  }
   .skills .skills_AllBox .skill_box:first-child {
     order: 3;
   }
@@ -67,10 +70,7 @@
   }
   .About .About_Allbox .About_img > figure {
     transform: scale(0.8);
-  }
-  .menu {
-    gap: 16px;
-  }
+  }  
   .scroll_icon {
     margin-top: 150px;
     margin-bottom: 50px;

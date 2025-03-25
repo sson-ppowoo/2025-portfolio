@@ -14,7 +14,7 @@
   align-items: center;  
 }
 .header_i .logobox{  
-  max-width: 42vw;
+  max-width: 42%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,7 @@
 }
 .menu.open {
   width: 60%;
-  transform: translateX(35%);    
+  transform: translateX(10%);    
 }
 .menuli {  
   color: #494554;
