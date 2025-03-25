@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 
 function Work() {
   const projects = [
@@ -71,6 +71,33 @@ function Work() {
     );
   };
 
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+  
+    window.addEventListener('resize', handleResize);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
+  const imgWidthSrc = (work) => {  // 특정 프로젝트(Work) 객체를 받아야 함
+    if (!work) return null; // 예외 처리
+    
+    if (windowWidth <= 500) {
+      return work.image_mobile;
+    } else if (windowWidth <= 1024) {
+      return work.image_tablet;
+    } else {
+      return work.image_web;
+    }
+  };
+
   return (
     <section id="Work">
       <h2>Work</h2>
@@ -85,18 +112,11 @@ function Work() {
                 className="Work_image"
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
-                <figure className="img_scroll_container">
-                  {/* <span>Web_Size</span> */}
-                  <img src={Work.image_web} alt={Work.title} />
-                  {/* <span>Tablet_Size</span>
-                  <img src={Work.image_tablet} alt={Work.title} />
-                  <span>Mobile_Size</span>
-                  <img src={Work.image_mobile} alt={Work.title} /> */}
+                <figure className="img_container">
+                <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
                 </figure>
               </div>
-              {/* <div className="Work_image_info">
-                <p>스크롤하여 페이지를 확인하세요</p>                
-              </div> */}
+         
             </div>
 
             <div

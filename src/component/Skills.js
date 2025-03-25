@@ -118,25 +118,25 @@ const Icon = [
   {
     id: 15,
     menu: "Toggle",
-    Text: ": 자신감을 가지고 사용 할 수 있습니다.",
+    Text: ": 잘 다룰수 있는 ",
     progress: 90,
   },
   {
     id: 16,
     menu: "Toggle",
-    Text: ": 약간의 검색이 필요하지만 자신있게 사용 할 수 있습니다.",
+    Text: ": 다소 미숙하지만 잘 다룰 수 있는",
     progress: 80,
   },
   {
     id: 17,
     menu: "Toggle",
-    Text: ": 검색이 필요하고 작업시간이 다소 걸리지만 사용 할 수 있습니다.",
+    Text: ": 미숙하지만 다룰 수 있는",
     progress: 70,
   },
   {
     id: 18,
     menu: "Toggle",
-    text: ": 검색이 필요하고 작업시간이 꽤 걸립니다. 좀 더 심화 된 학습이 필요한 부분입니다.",
+    text: ": 검색과 심화학습, 시간이 필요한",
     progress: 60,
   },
 ];

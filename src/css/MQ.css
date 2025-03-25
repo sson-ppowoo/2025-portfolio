@@ -11,7 +11,7 @@
     box-shadow: none;
   }
   .eclipse_container .moon {
-    animation: moon_shadow 4s infinite alternate;
+    animation: moon_shadow 4s infinite alternate linear;
   }
   @keyframes moon_shadow {
     0% {
@@ -41,8 +41,27 @@
     }    
   }
 
+  @media (max-width: 1335px) {  
+    .skills .skills_AllBox .skill_box:first-child {
+      order: 3;
+    }    
+    .skills .skills_AllBox .skill_box:nth-child(2n) {
+      order: 1;
+    }    
+    .skills .skills_AllBox .skill_box:last-child {
+      order: 2;
+    }    
+    .Toggle{
+      width: 23% !important;
+    }
+  }
+
   
   @media (max-width: 1200px) {
+    .Main_Box .eclipse_container{
+      width: 500px;
+      height: 500px;      
+    }   
     .About_R .About_textlist .About_list {
       font-size: 1.5rem !important;
     }
@@ -54,31 +73,51 @@
     }      
     .menu {
       gap: 16px;  
-    }
-    .menu.open {
-      position: absolute;
-      width: 10%;
-      height: 50vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: flex-end;
-      top: 100px;
-      right: 16px;      
-      background-color: #494554;            
-      border-radius: 15px;
-    }      
-    .menuli {  
-      color: #E3D8F2;
-    }      
-    .nav .Right_nav_box {
-      position: fixed;
-      top: 20vh !important;
-      right: 4% !important;
-    }
+    }   
   }
 
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) {      
+    .menu.open{
+      display: none;            
+    }
+    .ham{
+      display: none;
+    }
+    .Main_Box{
+      flex-direction: column;      
+    } 
+    .nav{
+      display: block;
+      z-index: 9999;
+    }
+    .nav .Right_nav_box{
+      top: 22vh !important;
+      right: -16px !important;  
+    }  
+    .nav .Right_nav_box .Right_nav{
+      gap: 16px !important;        
+      font-size: 1.2rem !important;
+      background-color: #494554;
+      padding: 8px;      
+      border-radius: 10px;
+    }
+    .nav .Right_nav_box .Right_nav .navli{      
+      color: #FBF8FF;                  
+    }
+    .nav .Right_nav_box .Right_nav .navli::after{
+      border: 1px solid #FBF8FF !important;
+      background-color: #FBF8FF !important;    
+    }
+    .Right_nav_box .Top{
+      top: -16vh !important;  
+    }
+    .main_text .text_song{
+      display: none;
+    }
+    .text_motto {
+
+    }
+
   }
 

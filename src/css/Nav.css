@@ -5,7 +5,7 @@
   z-index: 1000;    
 }
 .nav .Right_nav_box{  
-  position: fixed;
+  position: fixed;  
   top: 50%;
   right: -16px;  
   transform: translateY(-50%);    
@@ -17,7 +17,7 @@
 .nav .Right_nav_box .Right_nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;  
   align-items: flex-end;
   color: #AEA9BA;
   gap: 8px;  

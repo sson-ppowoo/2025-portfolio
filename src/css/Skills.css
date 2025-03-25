@@ -32,14 +32,15 @@
   width: 100%;
   margin: 100px auto;
   border: 2px dashed #494554;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  justify-content: center;
+  display: flex;  
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 16px;
   position: relative;
   border-radius: 25px;
 }
 .skills .skills_AllBox .skill_box {      
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -79,10 +80,6 @@
   align-items: center;
   gap: 8px;
   flex: 1;
-}
-.skill_itemBox .icon_img {
-}
-.skill_itemBox .icon_title {
 }
 .progress_bar {
   flex: 3;
@@ -124,7 +121,7 @@
 
 .Toggle {
   position: absolute;
-  width: 50%;
+  width: 30%;
   bottom: 7%;
   right: 2%;
   border: 2px dashed #494554;
@@ -136,9 +133,9 @@
   transition: 0.5s;
   animation: move_moon 3s infinite ease;
 }
-.Toggle .toggle_item {
+.Toggle .toggle_item {  
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
   align-items: center;
   gap: 8px;
 }
@@ -163,16 +160,16 @@
   width: 100%;
   text-align: center;
   font-family: 'Jua';  
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .Toggle .toggle_item .progress_bar .progress_moon .moon_icon {
-  width: 60%;
+  width: 70%;
   height: 60%;
   align-content: center;
 }
 .Toggle .Toggle_Text {
-  width: 70%;
+  width: 60%;
   height: 50%;
   display: flex;
   flex-wrap: nowrap;
