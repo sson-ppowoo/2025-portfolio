@@ -1,17 +1,21 @@
 @media (max-width: 1800px) {
-  .nav {
-    display: none;
+  .nav .Right_nav_box {
+    top: 82% !important;
+    right: 6% !important;
+    z-index: 9999;
+  }
+  .nav .Right_nav_box .Right_nav .navli {
+    display: none !important;
   }
 }
 
-
-@media (max-width: 1600px) {  
+@media (max-width: 1600px) {
   .Main_Box .eclipse_container {
     background: none;
     box-shadow: none;
   }
   .eclipse_container .moon {
-    animation: moon_shadow 4s infinite alternate;
+    animation: moon_shadow 4s infinite alternate !important;
   }
   @keyframes moon_shadow {
     0% {
@@ -35,146 +39,233 @@
   }
 }
 
-  @media (max-width: 1500px) {  
-    .menu.open {      
-      transform: translateX(5%);    
-    }    
+@media (max-width: 1500px) {
+  .menu.open {
+    transform: translateX(5%);
+  }
+}
+
+@media (max-width: 1335px) {
+  .skills .skills_AllBox .skill_box:first-child {
+    order: 3;
+  }
+  .skills .skills_AllBox .skill_box:nth-child(2n) {
+    order: 1;
+  }
+  .skills .skills_AllBox .skill_box:last-child {
+    order: 2;
+  }
+  .Toggle {
+    width: 23% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Main_Box .eclipse_container {
+    width: 600px !important;
+    height: 600px !important;
+  }
+  .About .About_Allbox .About_img > figure {
+    transform: scale(0.8);
+  }
+  .menu {
+    gap: 16px;
+  }
+  .scroll_icon {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1100px) {
+  .Contact_text > br {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    position: relative;
+  }
+  .header_i .logobox{
+    max-width: 80vw !important;    
+  }
+  .header_i .logobox>p{
+    width: 100vw !important;    
+  }
+  .Main_Box {
+    flex-direction: column;
+  }  
+  .menu.open {
+    z-index: 9999;
+    position: fixed;
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    top: 100px;
+    right: 16px;
+    background-color: transparent;
+    border-radius: 15px;
+  }
+  .menuli {
+    color: #e3d8f2;
+    font-size: 1rem;
+  }
+  .menu.open .menuli {
+    color: #494554;
+  }
+  .menuli:first-child {
+    display: block;
+  }
+  .Close {
+    display: block;
+    color: #494554;
+    font-size: 1rem;
+  }  
+  .text_motto {
+    font-size: 4.5rem !important;
+    text-align: center;
+  }
+  .main_text .text_song {
+    display: none !important;
+  }
+  .About_Allbox {
+    flex-direction: column;
+  }
+  .About .About_Allbox .About_img {
+    transform: scale(1);
+  }
+  .About_R .About_text > p > br {
+    display: none;
   }
 
-  @media (max-width: 1335px) {  
-    .skills .skills_AllBox .skill_box:first-child {
-      order: 3;
-    }    
-    .skills .skills_AllBox .skill_box:nth-child(2n) {
-      order: 1;
-    }    
-    .skills .skills_AllBox .skill_box:last-child {
-      order: 2;
-    }    
-    .Toggle{
-      width: 23% !important;
-    }
+  .About_R .About_text {
+    font-size: 2rem !important;
   }
+  .About_R .About_textlist .About_list {
+    font-size: 1.8rem !important;
+  }
+  .About_R .About_textlist .About_info {
+    font-size: 1.5rem !important;
+  }
+  .skills .skills_AllBox {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .skills_AllBox .skill_box .icon_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 24px auto;
+  }
+  .progress_bar {
+    width: 100px !important;
+    height: 16px !important;
+  }
+  .progress {
+    height: 16px !important;
+  }
+  .learning {
+    font-size: 0.8rem !important;
+    top: 70% !important;
+  }
+  .skills_AllBox .skill_box .icon_container .skill_item {
+    flex-direction: column;
+  }
+  .moon_icon {
+    display: none;
+  }
+  .Toggle {
+    width: 25% !important;
+    bottom: 10% !important;
+  }
+  #Work .Work_container .Work_item {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .Main_Box .eclipse_container {
+    width: 400px !important;
+    height: 400px !important;
+  }
+  .text_motto {
+    font-size: 3.5rem !important;  
+  }
+  .Toggle {
+    width: 95% !important;
+    bottom: -35% !important;
+  }
+  #Work>h2{
+    margin-top:60vh !important;
+  }
+  .menu.open{
+    width: 15% !important;
+  }
+}
 
+@media (max-width: 650px) {  
+  .text_motto {
+    font-size: 3rem !important;  
+  }
+  .About_R .About_text {
+    font-size: 1.5rem !important;
+  }
+  .About_R .About_textlist .About_list {
+    font-size: 1.3rem !important;
+  }
+  .About_R .About_textlist .About_info {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 650px) {  
+  .Main_Box .eclipse_container {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .text_motto {
+    font-size: 2.5rem !important;  
+    padding: 16px;
+  }
+  .Work_description .Work_title>h3, 
+  .Work_description .design .design_box>h3, 
+  .Work_description .useTools .tools_title>h3, 
+  .Work_description .uiux .Work_UIUX>h3{
+    font-size: 1rem !important;
+  }
+  .Work_description .Work_title>span, 
+  .Work_description .design .design_box>span, 
+  .Work_description .useTools .tools_title>span, 
+  .Work_description .uiux .Work_UIUX>span{
+    font-size: 0.8rem !important;
+  }
+  .menu.open{
+    width: 25% !important;
+  }  
+  #Footer>p>br{
+    display: none; 
+
+  }
+}
+
+@media (max-width: 500px) {  
+  .About .About_Allbox .About_img{
+    transform: scale(0.8) !important;
+  } 
+}
+@media (max-width: 360px) {
+  .text_motto {
+    font-size: 2rem !important;  
+    margin-top: 100px;    
+  }
+  .eclipse_container{
+    margin-top: 100px;
+  }
+  .header_i .logobox>p{
+    font-size: 1.5rem;
+  } 
   
-  @media (max-width: 1200px) {
-    .Main_Box .eclipse_container{
-      width: 500px;
-      height: 500px;      
-    }           
-    .About .About_Allbox .About_img > figure {
-      transform: scale(0.8);
-    }      
-    .menu {
-      gap: 16px;  
-    }    
-    .nav .Right_nav_box {
-      position: fixed;
-      top: 20vh !important;
-      right: 4% !important;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .header{position: relative;}
-    .Main_Box{
-      flex-direction: column;      
-    }     
-    .menu.open {      
-      z-index: 9999;      
-      position: fixed;
-      width: 10%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: flex-end;
-      top: 100px;
-      right: 16px;      
-      background-color: transparent;            
-      border-radius: 15px;      
-    }      
-    .menuli{
-      color: #E3D8F2;
-      font-size: 1rem;
-    }
-    .menu.open .menuli{  
-      color: #494554;
-    }             
-    .menuli:first-child{
-      display: block;  
-    }
-    .Close{
-      display: block;
-      color: #494554;
-    }
-    .nav {
-      display: block;
-    }
-    .nav .Right_nav_box{
-      top: 90% !important;
-      z-index: 9999;
-    }
-    .nav .Right_nav_box .Right_nav .navli{
-      display: none !important;      
-    }      
-    .text_motto{
-      font-size: 4.5rem !important;
-      text-align: center;
-    }
-    .main_text .text_song{
-      display: none !important;
-    }
-    .scroll_icon{
-      margin-top: 200px;
-    }
-    .About_Allbox{
-      flex-direction: column;
-
-    }
-    .About .About_Allbox .About_img{
-      transform: scale(1);      
-    }     
-    .About_R .About_text>p>br{
-      display: none;      
-    }     
-    
-    .About_R .About_text{      
-      font-size: 2rem !important;  
-                       
-    }               
-    .About_R .About_textlist .About_list{
-      font-size: 1.8rem !important;                          
-    }
-    .About_R .About_textlist .About_info{
-      font-size: 1.5rem !important;    
-    }
-    .skills .skills_AllBox{
-      display: grid;            
-    }    
-    .skills .skills_AllBox .skill_box .icon_container{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-    }
-    .progress_bar{
-      width: 100px !important;   
-      height: 16px !important;
-    }
-    .progress{
-      height: 16px !important;
-    }
-    .learning{
-      font-size: 0.8rem !important;   
-      top: 60% !important;
-      right: 0% !important;   
-    }
-    .skills_AllBox .skill_box .icon_container .skill_item{
-      flex-direction: column;
-    }
-    .moon_icon{
-      display: none;
-    }
-  }
-
-
-
+}

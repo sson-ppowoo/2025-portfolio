@@ -145,7 +145,7 @@ function Skills() {
   const progressRefs = useRef({});
 
   const ToggleClick = () => {
-    setIsToggleVisible((prev) => !prev);
+    setIsToggleVisible((prev) => !prev);    
   };
 
   useEffect(() => {

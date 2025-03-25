@@ -73,6 +73,7 @@
   margin: 16px auto;
   color: #AEA9BA;
   font-size: 1.2rem;
+  display: none;
 }
 #Work .Work_container .Work_item .Work_description{  
   width: 100%;

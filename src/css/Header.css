@@ -14,7 +14,7 @@
   align-items: center;  
 }
 .header_i .logobox{  
-  max-width: 30vw;
+  max-width: 42vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,14 +22,14 @@
   padding-left: 16px;
 }
 .header_i .logobox>p{
-  width: 80%;
+  width: 80vw;
   font-family: 'SupermercadoOne.ttf';    
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 .header_i .logo{    
   max-width: 50px;
-  min-height: 50px;    
+  min-height: 50px;
   border-radius: 50%;
   overflow: hidden;    
 }
@@ -54,9 +54,6 @@
   font-weight: 500;
   cursor: pointer;
   padding: 20px;
-}
-.menuli:first-child{
-  display: none;
 }
 .Close{
   display: none;  

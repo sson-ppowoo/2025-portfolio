@@ -86,8 +86,8 @@ function Work() {
     };
   }, []);
   
-  const imgWidthSrc = (work) => {  // 특정 프로젝트(Work) 객체를 받아야 함
-    if (!work) return null; // 예외 처리
+  const imgWidthSrc = (work) => {
+    if (!work) return null;
     
     if (windowWidth <= 500) {
       return work.image_mobile;
@@ -113,9 +113,11 @@ function Work() {
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
                 <figure className="img_container">
-                <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
-                </figure>
+                  <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
+                </figure>                
               </div>
+
+              <p className='Work_image_info'>사진을 스크롤하여 페이지 확인이 가능합니다</p>
          
             </div>
 
