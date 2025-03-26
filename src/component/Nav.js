@@ -53,12 +53,12 @@ function Nav() {
           >
             About
           </li>
-          <li
-            className={`navli ${activeMenu === 'Skills' ? 'active' : ''}`}
-            onClick={() => navMenuClick('Skills')}
+          {/* <li
+            className={`navli ${activeMenu === 'About' ? 'active' : ''}`}
+            onClick={() => navMenuClick('About')}
           >
             Skills
-          </li>
+          </li> */}
           <li
             className={`navli ${activeMenu === 'Work' ? 'active' : ''}`}
             onClick={() => navMenuClick('Work')}

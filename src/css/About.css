@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 1600px;
   height: auto;
-  margin: 200px auto;
+  margin: 150px auto;
+  margin-bottom: 16px;
   overflow: hidden;  
 }
 .About .About_title{
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: space-between;  
   gap: 16px;
-  margin: 100px auto;
+  margin: auto;
 }
 .About .About_Allbox .About_img{
   flex: 1;  
@@ -44,40 +45,46 @@
   margin: 8px auto;
 }
 .About_R .About_text{
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 50px 0;  
+  font-size: 1.5rem;  
+  font-weight: 500;
+  padding: 60px 0;
+  font-family: 'Jua';  
+  line-height: 150%;  
 }
 .About_R .About_text>p>span{
   color: #9481EB;  
+  font-weight: 700;
 }
 .About_R .About_textlist{
-  display: flex;
-  align-items: center;
-  gap: 16px;  
+  display: flex;  
+  flex-direction: column;    
 }
 .About_R .About_textlist .About_list{
-  display: flex;  
-  flex: 1;  
-  margin: 8px 0;
-  font-size: 2rem;
-  font-weight: 700;   
+  display: flex;
+  background-color: #E3D8F2;  
+  align-items: flex-end;
+  flex: 1;    
+  font-size: 1.8rem;
+  font-weight: 900;     
 }
 .About_R .About_textlist .About_info{
-  display: flex;    
-  align-items: center;    
+  display: flex;        
   flex-wrap: wrap;
-  font-size: 1.3rem;
-  font-weight: 700;  
-  flex: 5;  
-  margin: 8px ;  
+  align-items: center;
+  line-height: 200%;
+  margin-bottom: 32px;
+  justify-content: flex-start;  
+  font-size: 1.5rem;  
+  font-weight: 500;  
+  flex: 5;    
 }
 .About_R .About_textlist .About_info p{  
-  margin: 8px;  
+  margin: 0 8px;      
 }
 .About_R .About_textlist .About_info>img{
   width: 24px;
   height: 24px;        
+  margin-right: 16px;
 }
 .About_R .About_textlist .About_info span{
   font-size: 16px;  

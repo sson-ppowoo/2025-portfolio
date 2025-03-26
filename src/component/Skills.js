@@ -177,12 +177,12 @@ function Skills() {
   }, []);
 
   return (
-    <section id="Skills" className="skills">
+    <section id="About" className="skills">
       <h2 className="skills_title">Skills</h2>
 
-      <figure className="skills_Banner">
+      {/* <figure className="skills_Banner">
         <img src="/img/main/Banner.png" alt="Banner" />
-      </figure>
+      </figure> */}
 
       <div className="skills_AllBox">
         {skillBox.map((skill, idx) => (

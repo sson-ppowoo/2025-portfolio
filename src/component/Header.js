@@ -42,12 +42,12 @@ function Header() {
           >
             About
           </li>
-          <li
-            className={`menuli ${activeMenu === "Skills" ? "active" : ""}`}
-            onClick={() => MenuClick("Skills")}
+          {/* <li
+            className={`menuli ${activeMenu === "About" ? "active" : ""}`}
+            onClick={() => MenuClick("About")}
           >
             Skills
-          </li>
+          </li> */}
           <li
             className={`menuli ${activeMenu === "Work" ? "active" : ""}`}
             onClick={() => MenuClick("Work")}

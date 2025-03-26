@@ -2,18 +2,18 @@
   width: 100%;
   max-width: 1600px;
   height: auto;
-  margin: auto;
+  margin: 0px auto;  
 }
 .skills .skills_title {
   width: 100%;
   height: auto;
-  font-size: 3.5rem;
-  font-family: "SupermercadoOne.ttf";
+  font-size: 3rem;
+  font-family: 'Jua';  
   font-weight: 900;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 200px auto;
+  justify-content: flex-start;
+  align-items: center;  
+  padding: 0 16px ;
 }
 .skills .skills_Banner {
   width: 100%;
@@ -30,7 +30,7 @@
 }
 .skills .skills_AllBox {  
   width: 100%;
-  margin: 100px auto;
+  margin: 50px auto;
   border: 2px dashed #494554;
   display: flex;  
   justify-content: space-evenly;
@@ -63,6 +63,7 @@
   font-family: "Jua";
   font-size: 1rem;
   font-weight: 500;
+  margin-bottom: 32px;  
 }
 .skills_AllBox .skill_box .icon_container .skill_item {
   width: 100%;
