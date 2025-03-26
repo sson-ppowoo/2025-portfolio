@@ -48,16 +48,7 @@
 @media (max-width: 1335px) {
   .menu {
     gap: 16px;
-  }
-  .skills .skills_AllBox .skill_box:first-child {
-    order: 3;
-  }
-  .skills .skills_AllBox .skill_box:nth-child(2n) {
-    order: 1;
-  }
-  .skills .skills_AllBox .skill_box:last-child {
-    order: 2;
-  }
+  }  
   .Toggle {
     width: 23% !important;
   }
@@ -157,7 +148,7 @@
   }
   .skills .skills_AllBox .skill_box .icon_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     margin: 24px auto;
   }
   .progress_bar {
