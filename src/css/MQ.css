@@ -130,7 +130,7 @@
     display: none !important;
   }
   .About_Allbox {
-    flex-direction: column;
+    flex-direction: column;    
   }
   .About .About_Allbox .About_R {
     flex: none;
@@ -138,49 +138,48 @@
   }
   .About_R .About_text > p .br3 {
     display: block;
-  }
-  .skills .skills_AllBox {
-    display: flex;
-    flex-direction: column;
-  }
-  .skills .skills_AllBox .skill_box {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
-    align-content: center;
-  }
-  .icon_container {
+  }  
+  .skills .skills_AllBox{    
+    width: 50vw !important;
+    flex-direction: column; 
+    margin: 0px 0px !important;    
+    justify-content: flex-start;  
+  }  
+  .skills_AllBox .skill_box .icon_container{
+    flex-direction: row !important;          
     display: grid !important;
-    gap: 32px !important;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 32px !important;        
+    align-items: flex-end !important;
   }
-  .icon_container .skill_item {
-    flex-direction: column;
+  .icon_container .skill_item{
+    flex-direction: column;   
   }
-  .skills_AllBox .skill_box .icon_container {
-    width: 50% !important;
-    margin-bottom: 80px !important;
-    margin-left: 64px;
+  .progress_bar{
+    width: 100px !important;      
   }
-  .progress_bar {
-    width: 150px !important;
-  }
-  .progress_bar .progress {
+  .progress_bar .progress{
     height: 15px !important;
+    background-color: #9481EB !important;
+  }  
+  .progress_bar .progress .progress_butterfly .learning{
+    top: 90% !important;   
+    font-size: 0.85rem !important;
   }
-  .learning {
-    font-size: 0.8rem !important;
-    top: 100% !important;
-    right: -25% !important;
+  .progress_bar .progress .progress_butterfly .butterfly_icon {
+    display: none;    
   }
-  .progress_bar .progress .progress_butterfly .learning {
-    top: -40%;
-    right: -40%;
+  .Toggle {
+    width: 50% !important;
+    bottom: 10% !important;
+    right: -75% !important;
   }
-  .butterfly_icon {
-    display: block;
+  .Toggle_icon{      
+    bottom: 0% !important;
+    right: -70% !important;
   }
-  #Work {
+  
+  #Work .Work_container .Work_item {
     display: flex;
     flex-direction: column !important;
   }
@@ -195,9 +194,8 @@
     font-size: 2.5rem !important;
   }
   .menu.open {
-    width: 12vw;    
+    width: 12vw;
   }
-
 }
 
 @media (max-width: 650px) {
@@ -214,6 +212,12 @@
   }
   .menu.open {
     width: 15vw;
+  }
+  .Toggle {
+    display: none !important;
+  }
+  .Toggle_icon{      
+    display: none !important;
   }
   .Work_description .Work_title > h3,
   .Work_description .design .design_box > h3,
@@ -261,6 +265,9 @@
 @media (max-width: 450px) {
   .menu.open {
     width: 24vw;
+  }  
+  .skills_AllBox .skill_box .icon_container{       
+    grid-template-columns: repeat(2, 1fr);    
   }
 }
 @media (max-width: 430px) {

@@ -29,9 +29,8 @@
   height: auto;  
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  
-  gap: 16px;  
-  justify-content: center;    
+  justify-content: flex-start;      
+  gap: 16px;    
 }
 .skills .skills_AllBox .skill_box > h3 {
   width: 100%;  
@@ -44,14 +43,14 @@
   display: flex;    
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   gap: 16px;
   font-family: "Jua";
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 32px;    
 }
-.skills_AllBox .skill_box .icon_container .skill_item {
+.icon_container .skill_item {
   width: 100%;
   height: fit-content;
   display: flex;    
@@ -59,7 +58,7 @@
   align-items: center;
   margin: 8px auto;     
 }
-.skills_AllBox .skill_box .icon_container .skill_item .skill_itemBox {
+.icon_container .skill_item .skill_itemBox {
   display: flex;  
   text-align: center;
   flex-direction: column;
@@ -79,7 +78,7 @@
   position: relative;  
 }
 .progress_bar .progress {
-  height: 25px;
+  height: 25px;  
   background-color: #AA9AE1;  
   border-radius: 25px;
   position: relative;
@@ -94,7 +93,7 @@
   justify-content: center;
   align-items: center;    
 }
-.progress_bar .progress .progress_butterfly .learning {
+.progress_bar .progress .progress_butterfly .learning {  
   position: absolute;
   top: -40%;
   right: -40%;
