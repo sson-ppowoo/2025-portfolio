@@ -1,13 +1,13 @@
 #Work{
   width: 100%;
   max-width: 1600px;
-  margin: 200px auto;  
+  margin: 150px auto;  
 }
 #Work>h2{  
   font-family: 'SupermercadoOne.ttf';
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
-  margin: 200px auto;  
+  margin: 150px auto;  
   text-align: center;
   align-content: center;
 }

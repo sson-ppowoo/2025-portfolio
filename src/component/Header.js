@@ -25,11 +25,10 @@ function Header() {
               <img src="/img/main/logo.png" alt="logo" />
             </a>
           </h1>
-          <p>sson_ppowoo's portfolio</p>
+          <p className="logo_text">sson_ppowoo's portfolio</p>
         </div>
 
         <ul className={`menu ${menuOpen ? "open" : ""}`}>
-         
           <li
             className={`menuli ${activeMenu === "Main" ? "active" : ""}`}
             onClick={() => MenuClick("Main")}
@@ -43,8 +42,8 @@ function Header() {
             About
           </li>
           {/* <li
-            className={`menuli ${activeMenu === "About" ? "active" : ""}`}
-            onClick={() => MenuClick("About")}
+            className={`menuli ${activeMenu === "Skills" ? "active" : ""}`}
+            onClick={() => MenuClick("Skills")}
           >
             Skills
           </li> */}

@@ -1,73 +1,79 @@
 @media (max-width: 1800px) {
+  .header,
+  .main,
+  .About,
+  .skills,
+  .Work,
+  .Contact {
+    padding: 0 16px;
+  }
   .nav .Right_nav_box {
-    top: 82% !important;
-    right: 6% !important;
+    top: 90% !important;
+    right: 4% !important;
     z-index: 9999;
   }
   .nav .Right_nav_box .Right_nav .navli {
     display: none !important;
   }
 }
-
 @media (max-width: 1600px) {
-  .Main_Box .eclipse_container {
-    background: none;
-    box-shadow: none;
-  }
-  .eclipse_container .moon {
-    animation: moon_shadow 4s infinite alternate !important;
-  }
-  @keyframes moon_shadow {
-    0% {
-      box-shadow: -8px 10px 10px rgba(73, 69, 84, 0.3); /* 약한 그림자 */
-    }
-    25% {
-      box-shadow: -4px 10px 20px rgba(73, 69, 84, 0.5); /* 강한 그림자 */
-    }
-    50% {
-      box-shadow: 0px 10px 30px rgba(73, 69, 84, 0.7); /* 더 강한 그림자 */
-    }
-    75% {
-      box-shadow: 4px 10px 20px rgba(73, 69, 84, 0.5); /* 강한 그림자 */
-    }
-    100% {
-      box-shadow: 8px 10px 10px rgba(73, 69, 84, 0.3); /* 약한 그림자 */
-    }
-  }
-  .eclipse_container .eclipse {
-    display: none;
+  .skills .skills_AllBox {
+    padding: 16px;
   }
 }
-
 @media (max-width: 1500px) {
   .menu.open {
-    transform: translateX(5%);
+    transform: translateX(25%);
   }
 }
-
+@media (max-width: 1400px) {
+  .progress_bar {
+    width: 250px !important;
+    height: 20px !important;
+  }
+}
 @media (max-width: 1335px) {
   .menu {
-    gap: 16px;
-  }  
-  .Toggle {
-    width: 23% !important;
+    gap: 32px;
+  }
+  .menu.open {
+    transform: translateX(20%);
+  }
+  .text_motto {
+    font-size: 3rem !important;
   }
 }
 
 @media (max-width: 1200px) {
+  .menu {
+    gap: 16px;
+  }
+  .menu.open {
+    transform: translateX(6%);
+  }
   .Main_Box .eclipse_container {
     width: 600px !important;
     height: 600px !important;
+    margin: 100px auto;
   }
   .About .About_Allbox .About_img > figure {
     transform: scale(0.8);
-  }  
-  .scroll_icon {
-    margin-top: 150px;
-    margin-bottom: 50px;
   }
 }
+
 @media (max-width: 1100px) {
+  .header_i .logobox {
+    max-width: 50vw !important;
+  }
+  .text_motto {
+    font-size: 2.5rem !important;
+  }
+  .text_song {
+    font-size: 1rem !important;
+  }
+  .About_R .About_text > p .br4 {
+    display: none !important;
+  }
   .Contact_text > br {
     display: none;
   }
@@ -77,15 +83,15 @@
   .header {
     position: relative;
   }
-  .header_i .logobox{
-    max-width: 80vw !important;    
-  }
-  .header_i .logobox>p{
-    width: 100vw !important;    
+  .header_i .logobox {
+    max-width: 80vw !important;
   }
   .Main_Box {
     flex-direction: column;
-  }  
+  }
+  .scroll_icon {
+    margin: 20vh auto;
+  }
   .menu.open {
     z-index: 9999;
     position: fixed;
@@ -96,27 +102,28 @@
     justify-content: space-evenly;
     align-items: flex-end;
     top: 100px;
-    right: 16px;
+    right: 4%;
     background-color: transparent;
     border-radius: 15px;
+    background-color: #494554;
   }
   .menuli {
-    color: #e3d8f2;
+    color: #e3d8f2 !important;
     font-size: 1rem;
   }
   .menu.open .menuli {
-    color: #494554;
+    color: #e3d8f2;
   }
   .menuli:first-child {
     display: block;
   }
   .Close {
     display: block;
-    color: #494554;
+    color: #e3d8f2;
     font-size: 1rem;
-  }  
+  }
   .text_motto {
-    font-size: 4.5rem !important;
+    font-size: 3rem !important;
     text-align: center;
   }
   .main_text .text_song {
@@ -125,138 +132,158 @@
   .About_Allbox {
     flex-direction: column;
   }
-  .About .About_Allbox .About_img {
-    transform: scale(1);
+  .About .About_Allbox .About_R {
+    flex: none;
+    width: 100vw !important;
   }
-  .About_R .About_text > p > br {
-    display: none;
-  }
-
-  .About_R .About_text {
-    font-size: 2rem !important;
-  }
-  .About_R .About_textlist .About_list {
-    font-size: 1.8rem !important;
-  }
-  .About_R .About_textlist .About_info {
-    font-size: 1.5rem !important;
+  .About_R .About_text > p .br3 {
+    display: block;
   }
   .skills .skills_AllBox {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
-  .skills .skills_AllBox .skill_box .icon_container {
+  .skills .skills_AllBox .skill_box {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 24px auto;
+    grid-template-columns: repeat(3, 1fr) !important;
+    align-content: center;
+  }
+  .icon_container {
+    display: grid !important;
+    gap: 32px !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .icon_container .skill_item {
+    flex-direction: column;
+  }
+  .skills_AllBox .skill_box .icon_container {
+    width: 50% !important;
+    margin-bottom: 80px !important;
+    margin-left: 64px;
   }
   .progress_bar {
-    width: 100px !important;
-    height: 16px !important;
+    width: 150px !important;
   }
-  .progress {
-    height: 16px !important;
+  .progress_bar .progress {
+    height: 15px !important;
   }
   .learning {
     font-size: 0.8rem !important;
-    top: 70% !important;
+    top: 100% !important;
+    right: -25% !important;
   }
-  .skills_AllBox .skill_box .icon_container .skill_item {
-    flex-direction: column;
+  .progress_bar .progress .progress_butterfly .learning {
+    top: -40%;
+    right: -40%;
   }
-  .moon_icon {
-    display: none;
+  .butterfly_icon {
+    display: block;
   }
-  .Toggle {
-    width: 25% !important;
-    bottom: 10% !important;
-  }
-  #Work .Work_container .Work_item {
-    flex-direction: column;
-    gap: 16px;
+  #Work {
+    display: flex;
+    flex-direction: column !important;
   }
 }
+
 @media (max-width: 800px) {
   .Main_Box .eclipse_container {
     width: 400px !important;
     height: 400px !important;
   }
   .text_motto {
-    font-size: 3.5rem !important;  
+    font-size: 2.5rem !important;
   }
-  .Toggle {
-    width: 95% !important;
-    bottom: -35% !important;
+  .menu.open {
+    width: 12vw;    
   }
-  #Work>h2{
-    margin-top:60vh !important;
-  }
-  .menu.open{
-    width: 15% !important;
-  }
+
 }
 
-@media (max-width: 650px) {  
-  .text_motto {
-    font-size: 3rem !important;  
-  }
-  .About_R .About_text {
+@media (max-width: 650px) {
+  .logobox .logo_text {
     font-size: 1.5rem !important;
   }
-  .About_R .About_textlist .About_list {
-    font-size: 1.3rem !important;
-  }
-  .About_R .About_textlist .About_info {
-    font-size: 1rem !important;
-  }
-}
-
-@media (max-width: 650px) {  
   .Main_Box .eclipse_container {
     width: 300px !important;
     height: 300px !important;
   }
   .text_motto {
-    font-size: 2.5rem !important;  
+    font-size: 2rem !important;
     padding: 16px;
   }
-  .Work_description .Work_title>h3, 
-  .Work_description .design .design_box>h3, 
-  .Work_description .useTools .tools_title>h3, 
-  .Work_description .uiux .Work_UIUX>h3{
+  .menu.open {
+    width: 15vw;
+  }
+  .Work_description .Work_title > h3,
+  .Work_description .design .design_box > h3,
+  .Work_description .useTools .tools_title > h3,
+  .Work_description .uiux .Work_UIUX > h3 {
     font-size: 1rem !important;
   }
-  .Work_description .Work_title>span, 
-  .Work_description .design .design_box>span, 
-  .Work_description .useTools .tools_title>span, 
-  .Work_description .uiux .Work_UIUX>span{
+  .Work_description .Work_title > span,
+  .Work_description .design .design_box > span,
+  .Work_description .useTools .tools_title > span,
+  .Work_description .uiux .Work_UIUX > span {
     font-size: 0.8rem !important;
   }
-  .menu.open{
-    width: 25% !important;
-  }  
-  #Footer>p>br{
-    display: none; 
-
+}
+@media (max-width: 583px) {
+  .About_R .About_text > p .br3 {
+    display: none;
+  }
+  .menu.open {
+    width: 18vw;
   }
 }
 
-@media (max-width: 500px) {  
-  .About .About_Allbox .About_img{
-    transform: scale(0.8) !important;
-  } 
+@media (max-width: 550px) {
+  .header_i .logobox {
+    max-width: 70vw !important;
+  }
+  .About .About_Allbox .About_img > figure {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 10vh auto;
+  }
+  .About_R .About_text {
+    margin: 0px auto !important;
+  }
+}
+@media (max-width: 500px) {
+  .logobox .logo_text {
+    font-size: 1.2rem !important;
+  }
+  .menu.open {
+    width: 20vw;
+  }
+}
+@media (max-width: 450px) {
+  .menu.open {
+    width: 24vw;
+  }
+}
+@media (max-width: 430px) {
+  .logobox .logo {
+    transform: scale(0.7);
+  }
+  .logobox .logo_text {
+    font-size: 1rem !important;
+  }
+  .ham {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 370px) {
+  .header_i .logobox {
+    max-width: 75vw !important;
+  }
+  .header_i .logobox .logo_text {
+    width: 63vw;
+  }
 }
 @media (max-width: 360px) {
   .text_motto {
-    font-size: 2rem !important;  
-    margin-top: 100px;    
+    font-size: 1.5rem !important;
   }
-  .eclipse_container{
-    margin-top: 100px;
-  }
-  .header_i .logobox>p{
-    font-size: 1.5rem;
-  } 
-  
 }

@@ -180,10 +180,6 @@ function Skills() {
     <section id="About" className="skills">
       <h2 className="skills_title">Skills</h2>
 
-      {/* <figure className="skills_Banner">
-        <img src="/img/main/Banner.png" alt="Banner" />
-      </figure> */}
-
       <div className="skills_AllBox">
         {skillBox.map((skill, idx) => (
           <div key={idx} className="skill_box">
@@ -207,14 +203,14 @@ function Skills() {
                         }}
                         className="progress"
                       >
-                        <div className="progress_moon">
+                        <div className="progress_butterfly">
                           <span className="learning">
                             {icon.progress}%learning
                           </span>
-                          <figure className="moon_icon">
+                          <figure className="butterfly_icon">
                             <img
-                              src="/img/icon/learning_moon1.png"
-                              alt="moon_icon"
+                              src="/img/icon/butterfly.png"
+                              alt="butterfly_icon"
                             />
                           </figure>
                         </div>
@@ -238,10 +234,10 @@ function Skills() {
                   style={{ width: `${icon.progress}%` }}
                   className="progress"
                 >
-                  <div className="progress_moon">
+                  <div className="progress_butterfly">
                     <span className="learning">{icon.progress}%</span>
-                    <figure className="moon_icon">
-                      <img src="/img/icon/learning_moon1.png" alt="moon_icon" />
+                    <figure className="butterfly_icon">
+                      <img src="/img/icon/butterfly.png" alt="butterfly_icon" />
                     </figure>
                   </div>
                 </div>
