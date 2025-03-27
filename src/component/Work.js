@@ -22,10 +22,10 @@ function Work() {
       UIUX_kr: "UI/UX 개선점",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "기존의 적응형페이지 이용시 모바일페이지 접속에 로딩페이지가 오래출력 되면서 로딩 시간이 길어져, 이 사항을 CSS의 미디어쿼리 이용하여 이미지 디자인은 2가지이지만 반응형처럼 동작하도록 구현하여 로딩시간을 단축하였습니다.  Header&Footer의 Color중 회색요소가 다소 깔끔하지 못하고 구형의 웹 페이지 디자인 느낌을 강하게 주어 서브메뉴의 구현 방식을 수정하고, 색감은 로고와 통일감을 주어 깔끔한 느낌을 주기위해 노력하였습니다. 좌측 스크롤 이미지는 실제 작업물 이미지 입니다.",
+        "#기존페이지 #적응형페이지 #이용시 #로딩시간지연 #CSS #미디어쿼리 #반응형처럼 #동작구현 #로딩시간단축 #Header&Footer #Color #회색요소 #구형디자인 #서브메뉴수정 #색감 #로고와통일감 #깔끔한느낌",
       image_web: "/img/work/GongCha_Web.png",
       image_tablet: "/img/work/GongCha_Tap.png",
-      image_mobile: "/img/work/GongCha_Mobile.png",
+      mage_mobile: "/img/work/GongCha_Mobile.png",      
       href: "https://gong-cha-clone.vercel.app/"
     },
     {
@@ -105,13 +105,16 @@ function Work() {
         {projects.map((Work, index) => (
           <div className="Work_item" key={Work.id}>
             <div
-              className="Work_R"
+              className="Work_L"
               style={{ display: index === currentIndex ? "block" : "none" }}
             >
               <div
                 className="Work_image"
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
+                <figure className="img_frame">
+                  <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
+                </figure>                
                 <figure className="img_container">
                   <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
                 </figure>                
