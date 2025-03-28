@@ -78,6 +78,7 @@
 .Work_description .uiux .Work_UIUX{    
   display: flex;  
   align-items: center;        
+  flex-wrap: wrap;
   margin: 8px auto;      
 }
 .Work_description .item_more{
@@ -92,6 +93,7 @@
   display: flex;      
   justify-content: flex-start;
   align-items: center;    
+  flex-wrap: wrap;
   gap: 8px;
   font-size: 1rem;
   line-height: 200%;  

@@ -25,7 +25,7 @@ function Work() {
         "#기존페이지 #적응형페이지 #이용시 #로딩시간지연 #CSS #미디어쿼리 #반응형처럼 #동작구현 #로딩시간단축 #Header&Footer #Color #회색요소 #구형디자인 #서브메뉴수정 #색감 #로고와통일감 #깔끔한느낌",
       image_web: "/img/work/GongCha_Web.png",
       image_tablet: "/img/work/GongCha_Tap.png",
-      mage_mobile: "/img/work/GongCha_Mobile.png",      
+      image_mobile: "/img/work/GongCha_Mobile.png",      
       frame_web:"/img/work/Light.png",      
       frame_tablet: "/img/work/iPad.png",
       frame_mobile: "/img/work/iPhone X.png",
@@ -96,7 +96,7 @@ function Work() {
     if (!work) return null;
     
     if (windowWidth <= 500) {
-      return work.frame_web;
+      return work.image_mobile;
     } else if (windowWidth <= 1024) {
       return work.image_tablet;
     } else {
