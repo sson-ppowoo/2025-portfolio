@@ -45,18 +45,15 @@
   margin: auto;  
 }
 .About_R .About_text{  
-  font-size: 1.3rem;  
+  font-size: 1.2rem;  
   font-weight: 500;  
   font-family: 'Jua';  
-  line-height: 150%;
-  margin: 64px auto;  
+  line-height: 200%;
+  margin: 32px auto;  
   padding: 16px;    
 }
 .About_R .About_text>p>br{
   display: none;
-}
-.About_R .About_text>p .br4{
-  display: block;
 }
 .About_R .About_text>p>span{
   color: #9481EB;  
