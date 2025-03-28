@@ -26,6 +26,9 @@ function Work() {
       image_web: "/img/work/GongCha_Web.png",
       image_tablet: "/img/work/GongCha_Tap.png",
       mage_mobile: "/img/work/GongCha_Mobile.png",      
+      frame_web:"/img/work/Light.png",      
+      frame_tablet: "/img/work/iPad.png",
+      frame_mobile: "/img/work/iPhone X.png",
       href: "https://gong-cha-clone.vercel.app/"
     },
     {
@@ -49,10 +52,13 @@ function Work() {
       UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "2025년 웹 퍼블리셔 취업을 목표로 제작한 포트폴리오입니다. 다양한 포트폴리오를 참고하여 웹 퍼블리셔에 대한 정보 전달이 효과적으로 이루어질 수 있도록 구성하였습니다. 좌측 이미지는 실제 작업물이 아니라, 디자인 단계에서 Figma를 활용해 제작한 와이어프레임 이미지입니다. 제작 과정에서 사용성이 어색한 부분을 지속적으로 수정하고, 필요한 기능을 구현하며 완성도를 높여 나가며 현재 지속적으로 제작 진행중입니다.",
+        "#2025년 #상반기 #신입 #웹퍼블리셔 #취업 #취뽀를목표로! #신입의포트폴리오 #레퍼런스 #인사정보전달 #디자인단계 #Figma #와이어프레임 #제작과정 #시행착오중 #UI/UX #지속적수정 #기능구현 #완성도 #현재진행형 #제작진행중",
       image_web: "/img/work/portfolio_최종_Web.png",
       image_tablet: "/img/work/portfolio_최종_Tap.png",
       image_mobile: "/img/work/portfolio_최종_Mobile.png",
+      frame_web:"/img/work/Light.png",      
+      frame_tablet: "/img/work/iPad.png",
+      frame_mobile: "/img/work/iPhone X.png",
       href: "https://2025-portfolio-henna.vercel.app/"
     },
   ];
@@ -90,11 +96,22 @@ function Work() {
     if (!work) return null;
     
     if (windowWidth <= 500) {
-      return work.image_mobile;
+      return work.frame_web;
     } else if (windowWidth <= 1024) {
       return work.image_tablet;
     } else {
       return work.image_web;
+    }
+  };
+  const imgWidthFrameSrc = (work) => {
+    if (!work) return null;
+    
+    if (windowWidth <= 500) {
+      return work.frame_mobile;
+    } else if (windowWidth <= 1024) {
+      return work.frame_tablet;
+    } else {
+      return work.frame_web;
     }
   };
 
@@ -113,14 +130,13 @@ function Work() {
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
                 <figure className="img_frame">
-                  <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
-                </figure>                
+                  <img key={Work.id} src={imgWidthFrameSrc(Work)} alt={Work.title} />
+                </figure>            
                 <figure className="img_container">
                   <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} />
-                </figure>                
-              </div>
+                </figure>       
 
-              <p className='Work_image_info'>사진을 스크롤하여 페이지 확인이 가능합니다</p>
+              </div>             
          
             </div>
 

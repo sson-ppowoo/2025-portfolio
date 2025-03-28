@@ -33,7 +33,7 @@ function Contact() {
         </p>
         <figure>
           <img
-            src="/img/main/KakaoTalk_20250312_114720165.jpg"
+            src="/img/main/KakaoTalk_QR.jpg"
             alt="카카오톡 친구추가 QR코드"
           />
         </figure>
