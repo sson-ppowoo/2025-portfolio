@@ -11,26 +11,27 @@
   font-family: 'Jua';  
   font-weight: 700;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;  
+  justify-content: flex-start;  
   padding: 0px 32px ;  
 }
 .skills .skills_AllBox {  
   width: 100%;  
+  height: auto;
   margin: 32px auto;  
-  display: flex;     
-  justify-content: center;  
-  align-items: flex-start;  
-  gap: 16px;
-  position: relative;  
+  display: flex;
+  justify-content: center;        
+  gap: 32px;
+  position: relative;    
 }
-.skills .skills_AllBox .skill_box {        
+.skills .skills_AllBox .skill_box {     
+  width: fit-content;       
   margin: 0 auto;
   height: auto;  
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;      
-  gap: 16px;    
+  justify-content: flex-start;    
+  gap: 16px;   
+
 }
 .skills .skills_AllBox .skill_box > h3 {
   width: 100%;  
@@ -40,7 +41,7 @@
   padding: 16px;  
 }
 .skills_AllBox .skill_box .icon_container {  
-  display: flex;    
+  display: flex;      
   flex-direction: column;
   justify-content: center;
   align-items: center;  
@@ -69,7 +70,7 @@
 }
 .progress_bar {
   flex: 3;
-  width: 350px;  
+  width: 380px;  
   height: 25px;
   display: flex;
   background-color: #aea9bb;

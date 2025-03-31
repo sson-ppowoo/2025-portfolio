@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const skillBox = ["Web_publishing", "Desing", "PaperWork"];
+const skillBox = ["Web_publishing", "Design", "PaperWork"];
 const Icon = [
   {
     id: 1,
@@ -68,7 +68,7 @@ const Icon = [
   },
   {
     id: 9,
-    menu: "Desing",
+    menu: "Design",
     title: "Figma",
     src: `/img/icon/skills_icon/10_figma.png`,
     alt: "Figma_icon",
@@ -76,7 +76,7 @@ const Icon = [
   },
   {
     id: 10,
-    menu: "Desing",
+    menu: "Design",
     title: "PhotoShop",
     src: `/img/icon/skills_icon/11_photoshop.png`,
     alt: "PhotoShop_icon",
@@ -84,7 +84,7 @@ const Icon = [
   },
   {
     id: 11,
-    menu: "Desing",
+    menu: "Design",
     title: "Illustrator",
     src: `/img/icon/skills_icon/12_illustrator.png`,
     alt: "Illustrator_icon",

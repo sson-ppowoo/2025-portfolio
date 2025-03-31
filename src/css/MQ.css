@@ -1,10 +1,6 @@
 @media (max-width: 1800px) {
-  .header,
-  .main,
-  .About,
-  .skills,
-  .Work,
-  .Contact {
+  .header, .main, .About, 
+  .skills, .Work, .Contact {
     padding: 0 16px;
   }
   .nav .Right_nav_box {
@@ -19,17 +15,20 @@
 @media (max-width: 1600px) {
   .skills .skills_AllBox {
     padding: 16px;
-  }
+  }  
 }
 @media (max-width: 1500px) {
   .menu.open {
     transform: translateX(25%);
-  }
+  }  
 }
 @media (max-width: 1400px) {
   .progress_bar {
     width: 250px !important;
     height: 20px !important;
+  }
+  .text_motto {
+    padding: 0px 16px;
   }
 }
 @media (max-width: 1335px) {
@@ -76,6 +75,45 @@
   }
   .About_R .About_text > p .br4 {
     display: none !important;
+  }
+  .skills .skills_AllBox{    
+    flex-wrap: wrap !important;
+  } 
+  .icon_container .skill_item{
+    width: fit-content !important;
+  }
+  .skills_AllBox .skill_box .icon_container{
+    flex-direction: row !important;
+    width: fit-content;
+    height: auto;    
+    flex-wrap: wrap;    
+    align-content: flex-start !  ;
+  }
+  .icon_container .skill_item{
+    flex-direction: column;   
+  }
+  .progress_bar{
+    width: 100px !important;      
+  }
+  .progress_bar .progress{
+    height: 15px !important;    
+    background-color: #9481EB !important;
+  }  
+  .progress_bar .progress .progress_butterfly .learning{
+    top: 90% !important;   
+    font-size: 0.85rem !important;
+  } 
+  .progress_bar .progress .progress_butterfly .butterfly_icon {
+    display: none;    
+  }
+  .Toggle {
+    width: 30% !important;
+    bottom: -55% !important;
+    right: 4% !important;
+  }
+  .Toggle_icon{      
+    bottom: -10% !important;   
+    right: 10%; 
   }
   .Contact_text > br {
     display: none;
@@ -141,62 +179,10 @@
   }
   .About_R .About_text > p .br3 {
     display: block;
-  }  
-  .skills .skills_AllBox{    
-    width: 50vw !important;
-    flex-direction: column; 
-    margin: 0px 0px !important;    
-    justify-content: flex-start;  
-  }  
-  .skills_AllBox .skill_box .icon_container{
-    flex-direction: row !important;          
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr);    
-    gap: 32px !important;        
-    align-items: flex-end !important;
-  }
-  .icon_container .skill_item{
-    flex-direction: column;   
-  }
-  .progress_bar{
-    width: 100px !important;      
-  }
-  .progress_bar .progress{
-    height: 15px !important;
-    background-color: #9481EB !important;
-  }  
-  .progress_bar .progress .progress_butterfly .learning{
-    top: 90% !important;   
-    font-size: 0.85rem !important;
-  }
-  .progress_bar .progress .progress_butterfly .butterfly_icon {
-    display: none;    
-  }
-  .Toggle {
-    width: 50% !important;
-    bottom: 10% !important;
-    right: -75% !important;
-  }
-  .Toggle_icon{      
-    bottom: 0% !important;
-    right: -70% !important;
-  }
+  }    
   #Work .Work_container .Work_item{
-    flex-direction: column;
-  }
-  .Work_item .Work_L{   
-    height: 40vh !important;    
-    overflow: hidden;  
-    box-shadow: 0px 8px 8px 0px #494554;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  .Work_image .img_frame{        
-    transform: scale(1) !important;          
-    overflow: hidden;          
-  }
-  #Work .Work_container .Work_item .Work_description{
-    padding: 4% !important;
+    flex-direction: column;    
+    gap: 50px;
   }
 }
 
@@ -210,10 +196,13 @@
   }
   .menu.open {
     width: 12vw;
+  }  
+  .Toggle {
+    display: none !important;
   }
-  .Work_item .Work_L{   
-    height: 30vh !important;       
-  } 
+  .Toggle_icon{      
+    display: none !important;
+  }
 }
 
 @media (max-width: 650px) {
@@ -230,13 +219,7 @@
   }
   .menu.open {
     width: 15vw;
-  }
-  .Toggle {
-    display: none !important;
-  }
-  .Toggle_icon{      
-    display: none !important;
-  }
+  }  
   .Work_description .Work_title > h3,
   .Work_description .design .design_box > h3,
   .Work_description .useTools .tools_title > h3,
