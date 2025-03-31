@@ -7,15 +7,9 @@ function Contact() {
       name: "Instagram",
       url: "https://www.instagram.com/sson_ppowoo/?hl=ko",
       img: "/img/icon/skill-icons_instagram.png",
-    },
+    },    
     {
       id: 2,
-      name: "GitHub",
-      url: "https://github.com/sson-ppowoo",
-      img: "/img/icon/uiw_github.png",
-    },
-    {
-      id: 3,
       name: "google",
       url: "mailto:ssonmin930408@gmail.com",
       img: "/img/icon/logos_google-gmail.png",
