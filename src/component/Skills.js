@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const skillBox = ["Web_publishing", "Design", "PaperWork"];
+const skillBox = ["Web_publishing", "Design", "PaperWork","Collaboration"];
 const Icon = [
   {
     id: 1,
@@ -117,24 +117,40 @@ const Icon = [
   },
   {
     id: 15,
-    menu: "Toggle",
-    Text: ": 잘 다룰수 있는 ",
-    progress: 90,
+    menu: "Collaboration",
+    title: "Github",
+    src: `/img/icon/uiw_github.png`,
+    alt: "github_icon",
+    progress: 80,
   },
   {
     id: 16,
-    menu: "Toggle",
-    Text: ": 다소 미숙하지만 잘 다룰 수 있는",
+    menu: "Collaboration",
+    title: "Notion",
+    src: `/img/icon/logos_notion-icon.png`,
+    alt: "Notion_icon",
     progress: 80,
   },
   {
     id: 17,
     menu: "Toggle",
+    Text: ": 잘 다룰수 있는 ",
+    progress: 90,
+  },
+  {
+    id: 18,
+    menu: "Toggle",
+    Text: ": 다소 미숙하지만 잘 다룰 수 있는",
+    progress: 80,
+  },
+  {
+    id: 19,
+    menu: "Toggle",
     Text: ": 미숙하지만 다룰 수 있는",
     progress: 70,
   },
   {
-    id: 18,
+    id: 20,
     menu: "Toggle",
     text: ": 검색과 심화학습, 시간이 필요한",
     progress: 60,

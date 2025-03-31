@@ -18,15 +18,22 @@
   width: 100%;  
   height: auto;
   margin: 32px auto;  
-  display: flex;
-  justify-content: center;        
-  gap: 32px;
-  position: relative;    
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);  
+  justify-content: center;      
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;  
+  position: relative;      
+}
+.skill_box:first-child{
+  grid-row: 1/4;
 }
 .skills .skills_AllBox .skill_box {     
   width: fit-content;       
   margin: 0 auto;
-  height: auto;  
+  height: auto;    
   display: flex;
   flex-direction: column;
   justify-content: flex-start;    
@@ -45,7 +52,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-  gap: 16px;
+  gap: 32px;
   font-family: "Jua";
   font-size: 1rem;
   font-weight: 500;
@@ -67,6 +74,9 @@
   align-items: center;
   gap: 8px;
   flex: 1;
+}
+.skill_itemBox .icon_img{
+  max-width: 38px;
 }
 .progress_bar {
   flex: 3;
@@ -99,8 +109,7 @@
   top: -40%;
   right: -40%;
   font-size: 1rem;
-  font-weight: 500;
-  
+  font-weight: 500; 
 }
 .progress_bar .progress .progress_butterfly .butterfly_icon {
   width: 100%;
