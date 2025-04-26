@@ -86,6 +86,7 @@
 .Work_description .useTools .tools_icon{
   display: flex;
   justify-content:flex-start;
+  align-items: center;
   gap: 16px;       
   margin-bottom: 32px;
 }

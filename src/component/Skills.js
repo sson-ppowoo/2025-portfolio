@@ -40,7 +40,7 @@ const Icon = [
     title: "React",
     src: `/img/icon/skills_icon/5_React.png`,
     alt: "React_icon",
-    progress: 70,
+    progress: 80,
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const Icon = [
     title: "PhotoShop",
     src: `/img/icon/skills_icon/11_photoshop.png`,
     alt: "PhotoShop_icon",
-    progress: 70,
+    progress: 80,
   },
   {
     id: 11,
@@ -88,7 +88,7 @@ const Icon = [
     title: "Illustrator",
     src: `/img/icon/skills_icon/12_illustrator.png`,
     alt: "Illustrator_icon",
-    progress: 60,
+    progress: 70,
   },
 
   {
@@ -152,7 +152,7 @@ const Icon = [
   {
     id: 20,
     menu: "Toggle",
-    text: ": 검색과 심화학습, 시간이 필요한",
+    text: ": 검색과 심화학습, 작업시간이 필요한",
     progress: 60,
   },
 ];

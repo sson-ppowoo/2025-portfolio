@@ -25,7 +25,7 @@ function Contact() {
           되겠습니다. <br/>저의 프로젝트를 봐주셔서 감사합니다. 더 궁금하시다면
           언제든지 연락 주세요! (●'◡'●)
         </p>
-        <figure>
+        <figure className="Contact_figure">
           <img
             src="/img/main/KakaoTalk_QR.jpg"
             alt="카카오톡 친구추가 QR코드"
