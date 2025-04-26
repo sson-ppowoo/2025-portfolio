@@ -208,6 +208,10 @@
   .menu.open {
     width: 12vw;
   }  
+  .Right_nav_box .Top{
+    right: 1vw;
+    top: -3vh !important;
+  }
 }
 
 @media (max-width: 650px) {

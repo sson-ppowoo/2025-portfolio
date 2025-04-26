@@ -1,105 +1,121 @@
-.About{
+.About {
   width: 100%;
   max-width: 1600px;
   height: auto;
-  margin: 150px auto;  
+  margin: 150px auto;
   margin-bottom: 16px;
-  overflow: hidden;  
+  overflow: hidden;
 }
-.About .About_title{  
+
+.About .About_title {
   width: 100%;
-  height: auto;  
-  font-family: 'SupermercadoOne.ttf';  
+  height: auto;
+  font-family: 'SupermercadoOne.ttf';
   font-size: 4rem;
   font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.About .About_Allbox{
+
+.About .About_Allbox {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   gap: 16px;
   margin: auto;
+  overflow: hidden;
 }
-.About .About_Allbox .About_img{    
-  flex: 1;  
+
+.About .About_Allbox .About_img {
+  flex: 1;
   min-height: 150px;
   display: flex;
-  justify-content: center;  
-  align-items: center;  
+  justify-content: center;
+  align-items: center;
 }
-.About .About_Allbox .About_img>figure{
+
+.About .About_Allbox .About_img>figure {
   width: 500px;
   height: 500px;
   border-radius: 50%;
   background-color: #767585;
   overflow: hidden;
 }
-.About .About_Allbox .About_img>figure>img{  
+
+.About .About_Allbox .About_img>figure>img {
   transform: translateY(-6%) scale(0.8);
 }
-.About .About_Allbox .About_R{
-  flex: 1;  
-  width: 50%;  
-  margin: auto;  
-}
-.About_R .About_text{  
-  font-size: 1.2rem;  
-  font-weight: 500;  
-  font-family: 'Jua';  
+
+.About_R .About_text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Jua';
   line-height: 200%;
-  margin: 32px auto;  
-  padding: 16px;    
+  margin: 32px auto;
+  padding: 16px;
 }
-.About_R .About_text>p>br{
+.About_R .About_text>p{
+  max-width: calc(100vw - 56px);
+}
+.About_R .About_text>p>br {
   display: none;
 }
-.About_R .About_text>p>span{
-  color: #9481EB;  
+
+.About_R .About_text>p>span {
+  color: #9481EB;
   font-weight: 500;
 }
-.About_R .About_textlist{  
+
+.About_R .About_textlist {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
-.About_textlist .About_list{
+
+.About_textlist .About_list {
   font-size: 1.3rem;
   font-weight: 700;
-  padding: 4px 16px;  
-  background-color: #E3D8F2;  
+  padding: 4px 16px;
+  background-color: #E3D8F2;
 }
-.About_textlist .About_info{
+
+.About_textlist .About_info {
+  max-width: calc(100vw - 56px);
   font-size: 1.1rem;
   font-weight: 500;
-  padding: 8px 16px;   
-  margin-bottom: 40px;  
+  padding: 8px 16px;
+  margin-bottom: 40px;
 }
-.About_textlist .About_info .info{  
-  display: flex;  
+
+.About_textlist .About_info .info {
+  display: flex;
   gap: 8px;
-  margin: 8px auto;    
-  flex-wrap: wrap;  
+  margin: 8px auto;
+  flex-wrap: wrap;
 }
-.About_textlist .About_info .info .info1{  
-  display: flex;  
+
+.About_textlist .About_info .info .info1 {
+  display: flex;
   line-height: 150%;
 }
-.info1>img{
+
+.info1>img {
   width: 24px;
   height: 24px;
 }
-.About_textlist .About_info .info>span{
+
+.About_textlist .About_info .info>span {
   color: #AEA9BA;
   font-size: 1rem;
 }
-.About_textlist .About_info .info2{  
-  display: flex;  
+
+.About_textlist .About_info .info2 {
+  display: flex;
   gap: 8px;
   margin: 8px auto;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
-.About_textlist .About_info .info2>span{
+
+.About_textlist .About_info .info2>span {
   color: #AEA9BA;
   font-size: 1rem;
 }

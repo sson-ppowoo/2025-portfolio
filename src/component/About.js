@@ -65,8 +65,8 @@ function About() {
               <br className="br2" />
               새로운 기술을 배우고 적용하는 과정에서 성장을 느낍니다.
               <br className="br3" />
-              새로운 코드와 툴을 학습하는 즐거움으로 웹을 만들어가는 
-              <br className="br4" /> 
+              새로운 코드와 툴을 학습하는 즐거움으로 웹을 만들어가는
+              <br className="br4" />
               &nbsp;신입 웹 퍼블리셔 <span> 손민정 </span>입니다.
             </p>
           </div>
@@ -100,9 +100,8 @@ function About() {
                 </div>
               </div>
             </div>
-          ))}          
+          ))}
         </div>
-        
       </div>
     </section>
   );
