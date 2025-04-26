@@ -63,6 +63,7 @@
   cursor: pointer;  
   position: absolute;
   top: 75%;  
+  right: 0.4vw;
   margin-top: 50%;
   font-size: 1rem;
   font-weight: 700;
