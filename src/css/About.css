@@ -1,13 +1,13 @@
-.About {
+.About {  
   width: 100%;
   max-width: 1600px;
   height: auto;
   margin: 150px auto;
   margin-bottom: 16px;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
-.About .About_title {
+.About .About_title {  
   width: 100%;
   height: auto;
   font-family: 'SupermercadoOne.ttf';
@@ -19,19 +19,20 @@
 }
 
 .About .About_Allbox {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin: auto;
+  width: 100%;
+  height: auto;  
+  display: flex;      
   overflow: hidden;
+  justify-content: space-evenly;
+  gap: 32px;
 }
 
-.About .About_Allbox .About_img {
-  flex: 1;
-  min-height: 150px;
+.About .About_Allbox .About_img {    
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;  
 }
 
 .About .About_Allbox .About_img>figure {
@@ -46,7 +47,7 @@
   transform: translateY(-6%) scale(0.8);
 }
 
-.About_R .About_text {
+.About_R .About_text {  
   font-size: 1.2rem;
   font-weight: 500;
   font-family: 'Jua';
@@ -57,6 +58,7 @@
 .About_R .About_text>p{
   max-width: calc(100vw - 56px);
 }
+
 .About_R .About_text>p>br {
   display: none;
 }

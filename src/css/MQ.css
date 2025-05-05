@@ -5,9 +5,9 @@
   }
   .nav .Right_nav_box {
     top: 90% !important;
-    right: 4% !important;
+    right: 0% !important;
     z-index: 9999;
-  }
+  }  
   .nav .Right_nav_box .Right_nav .navli {
     display: none !important;
   }
@@ -196,6 +196,11 @@
     display: none !important;
   }
 }
+@media (max-width: 925px) {
+  .About_R .About_text > p .br3 {
+    display: none;
+  }   
+}
 
 @media (max-width: 800px) {
   .Main_Box .eclipse_container {
@@ -210,7 +215,7 @@
   }  
   .Right_nav_box .Top{
     right: 1vw;
-    top: -3vh !important;
+    top: -1vh !important;
   }
 }
 
@@ -243,9 +248,6 @@
   }
 }
 @media (max-width: 583px) {
-  .About_R .About_text > p .br3 {
-    display: none;
-  }
   .menu.open {
     width: 18vw;
   }
