@@ -48,7 +48,7 @@ const Icon = [
     title: "React Router",
     src: `/img/icon/skills_icon/6_react_router.png`,
     alt: "React Router_icon",
-    progress: 60,
+    progress: 70,
   },
   {
     id: 7,
