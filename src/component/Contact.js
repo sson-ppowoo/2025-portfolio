@@ -13,7 +13,7 @@ function Contact() {
       name: "google",
       url: "mailto:ssonmin930408@gmail.com",
       img: "/img/icon/logos_google-gmail.png",
-    },
+    },    
   ];
   return (
     <section id="Contact">

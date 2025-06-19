@@ -11,6 +11,7 @@ import './css/About.css';
 import Skills from './component/Skills';
 import './css/Skills.css';
 import Work from './component/Work';
+import Work2 from './component/Work2';
 import './css/Work.css';
 import Contact from './component/Contact';
 import './css/Contact.css';
@@ -26,6 +27,7 @@ function App() {
       <About/>
       <Skills/>      
       <Work/>      
+      <Work2/>      
       <Contact/>
       <Footer/>      
     </div>

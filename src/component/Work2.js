@@ -1,60 +1,57 @@
 import React, { useState, useEffect } from "react";
 
-function Work() {
-  const projects = [
+function Work2() {
+  const projects = [   
     {
       id: 1,
-      title: "공차 메인페이지 클론코딩 2024",
-      title_en: "[Gongcha Main Page Clone Coding]",
-      Time: "제작기간 : 96시간 [4일] | 기여도 : 100% [Personal Work]",
+      title: "초대장 스튜디오 로고제작",
+      title_en: "[Production of Invitation Studio Logos]",
+      Time: "제작기간 : 1시간 | 기여도 : 50% [Using AI Work]",
       design_kr: "디자인요소",
       design_en: "[design Element]",
-      font: ["NanumGothic", "ChosunCentennial"],
-      color: ["#CF3E58", "#C30E2E", "#efefef"],
+      font: ["| AI Generation Font", ],
+      color: ["#F1EEE3", "#817494"],
       Tool_kr: "사용한 툴",
       Tool_en: "[Use Tools]",
-      Tool: ["HTML5", "CSS3", "JavaScript"],
+      Tool: ["photoshop", "chatgpt"],
       Tools_img: [
-        "img/icon/skills_icon/1_html5.png",
-        "img/icon/skills_icon/2_css3.png",
-        "img/icon/skills_icon/3_JavaScript.png",
-      ],
-      UIUX_kr: "UI/UX 개선점",
-      UIUX_en: "[UI/UX_Improvements Points]",
-      description:
-        "#기존페이지 #적응형페이지 #이용시 #로딩시간지연 #CSS #미디어쿼리 #반응형처럼 #동작구현 #로딩시간단축 #Header&Footer #Color #회색요소 #구형디자인 #서브메뉴수정 #색감 #로고와통일감 #깔끔한느낌",
-      image_web: "/img/work/Light 복사.png",
-      image_tablet: "/img/work/iPad 복사.png",
-      image_mobile: "/img/work/iPhone X 복사.png",
-      href: "https://gong-cha-clone.vercel.app/",
-    },
-    {
-      id: 2,
-      title: "손민정 개인 포트폴리오 2025",
-      title_en: "[2025 Personal Portfolio]",
-      Time: "제작기간 : 120시간 [5일 : 진행중] | 기여도 : 100% [Personal Work]",
-      design_kr: "디자인요소",
-      design_en: "[design Element]",
-      font: ["Jua", "NotoSansKR", "SupermercadoOne"],
-      color: ["#FBF8FF", "#E3D8F2", "#9481EB", "#AEA9BA", "#494554"],
-      Tool_kr: "사용한 툴",
-      Tool_en: "[Use Tools]",
-      Tool: ["HTML5", "CSS3", "JavaScript", "React"],
-      Tools_img: [
-        "img/icon/skills_icon/1_html5.png",
-        "img/icon/skills_icon/2_css3.png",
-        "img/icon/skills_icon/3_JavaScript.png",
-        "img/icon/skills_icon/5_React.png",
+        "img/icon/skills_icon/11_photoshop.png",
+        "img/icon/skills_icon/16_chatgpt.png",
       ],
       UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "#2025년 #상반기 #신입 #웹퍼블리셔 #취업 #취뽀를목표로! #신입의포트폴리오 #레퍼런스 #인사정보전달 #디자인단계 #Figma #와이어프레임 #제작과정 #시행착오중 #UI/UX #지속적수정 #기능구현 #완성도 #현재진행형 #제작진행중",
-      image_web: "/img/work/Light 복사2.png",
-      image_tablet: "/img/work/iPad 복사2.png",
-      image_mobile: "/img/work/iPhone X 복사2.png",
-      href: "https://2025-portfolio-henna.vercel.app/",
-    },  
+        "#로고제작 #초대장스튜디오 #로고디자인 #포토샵 #AI활용디자인 #ChatGPT",
+      image_web: "img/work/songil_logo.png",
+      image_tablet: "img/work/songil_logo.png",
+      image_mobile: "img/work/songil_logo.png",
+      href: "https://drive.google.com/file/d/1kCZ0BVbHBu4CoLFGg350jO0GV78jP1t_/view?usp=sharing",
+    },
+    {
+      id: 2,
+      title: "유투브 메인 배너 제작",
+      title_en: "[YouTube Main Banner Production]",
+      Time: "제작기간 : 1시간 | 기여도 : 50% [Using AI Work]",
+      design_kr: "디자인요소",
+      design_en: "[design Element]",
+      font: ["Jua", "AI Generation Font" ],
+      color: ["#E0BFE9", "#DBB697", "#593845"],
+      Tool_kr: "사용한 툴",
+      Tool_en: "[Use Tools]",
+      Tool: ["photoshop", "chatgpt"],
+      Tools_img: [
+        "img/icon/skills_icon/11_photoshop.png",
+        "img/icon/skills_icon/16_chatgpt.png",
+      ],
+      UIUX_kr: "UI/UX",
+      UIUX_en: "[UI/UX_Improvements Points]",
+      description:
+        "#배너제작 #유투브대문제작 #배너디자인 #포토샵 #AI활용디자인 #ChatGPT",
+      image_web: "img/work/youtube 배너 _ leesalin.png",
+      image_tablet: "img/work/youtube 배너 _ leesalin.png",
+      image_mobile: "img/work/youtube 배너 _ leesalin.png",
+      href: "https://drive.google.com/file/d/1LUBKHO_8RLW9CQwxIKRgFEfwp7R-2-G1/view?usp=sharing",
+    },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalProjects = projects.length;
@@ -99,7 +96,7 @@ function Work() {
 
   return (
     <section id="Work">
-      <h2>Work | Web</h2>
+      <h2>Work | Design</h2>
       {/* <h2>Web Projects</h2> */}
       <div className="Work_container">
         {projects.map((Work, index) => (
@@ -213,4 +210,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Work2;

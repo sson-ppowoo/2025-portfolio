@@ -15,7 +15,7 @@
   width: 100%;
   height: auto;
   margin: 0px auto;  
-  position: relative;  
+  position: relative;      
 }
 #Work .Work_container .Work_item{    
   display: flex;
@@ -83,7 +83,7 @@
 .Element:last-child{
   margin-bottom: 32px;
 }
-.Work_description .useTools .tools_icon{
+.Work_description .useTools .tools_icon{       
   display: flex;
   justify-content:flex-start;
   align-items: center;

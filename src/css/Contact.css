@@ -27,12 +27,12 @@
   padding: 0 12%;  
 }
 #Contact .ContactAll .Contact_figure{
-  width: 16vw;
-  height: auto;
+  width: 12vw;
+  height: auto;  
 }
 #Contact .ContactAll .SNSurl{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 48px;  
+  gap: 60px;    
 }
