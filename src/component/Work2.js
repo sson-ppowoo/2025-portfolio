@@ -46,7 +46,7 @@ function Work2() {
       UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
-        "#배너제작 #유투브대문제작 #배너디자인 #포토샵 #AI활용디자인 #ChatGPT",
+        "#배너제작 #배너디자인 #유투브대문제작 #규격에 맞춘 디자인 #포토샵 #AI활용디자인 #ChatGPT",
       image_web: "img/work/youtube 배너 _ leesalin.png",
       image_tablet: "img/work/youtube 배너 _ leesalin.png",
       image_mobile: "img/work/youtube 배너 _ leesalin.png",

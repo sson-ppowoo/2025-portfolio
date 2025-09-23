@@ -96,20 +96,24 @@
 }
 
 .About_textlist .About_info .info .info1 {
+  gap: 8px;
   display: flex;
   line-height: 150%;
 }
 
-.info1>img {
+.info1>img,
+.info2>img {
   width: 24px;
   height: 24px;
 }
+
 
 .About_textlist .About_info .info>span {
   color: #AEA9BA;
   font-size: 1rem;
 }
 
+.About_textlist .About_info .info3,
 .About_textlist .About_info .info2 {
   display: flex;
   gap: 8px;
@@ -117,7 +121,7 @@
   flex-wrap: wrap;
 }
 
-.About_textlist .About_info .info2>span {
+.About_textlist .About_info .info3>span{
   color: #AEA9BA;
   font-size: 1rem;
 }

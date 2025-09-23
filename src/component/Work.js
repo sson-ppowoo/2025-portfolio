@@ -19,7 +19,7 @@ function Work() {
         "img/icon/skills_icon/2_css3.png",
         "img/icon/skills_icon/3_JavaScript.png",
       ],
-      UIUX_kr: "UI/UX 개선점",
+      UIUX_kr: "UI/UX",
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
         "#기존페이지 #적응형페이지 #이용시 #로딩시간지연 #CSS #미디어쿼리 #반응형처럼 #동작구현 #로딩시간단축 #Header&Footer #Color #회색요소 #구형디자인 #서브메뉴수정 #색감 #로고와통일감 #깔끔한느낌",
