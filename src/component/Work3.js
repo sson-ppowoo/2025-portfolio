@@ -132,7 +132,7 @@ function Work3() {
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
                 <figure className="img_container">
-                  <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} style={{width : "auto", height : "400px", margin:"0 auto" }} />
+                  <img key={Work.id} src={imgWidthSrc(Work)} alt={Work.title} style={{width : "400px", height : "auto", margin:"0 auto" }} />
                 </figure>
               </div>
             </div>
