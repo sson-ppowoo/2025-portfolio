@@ -83,8 +83,8 @@ function Work2() {
       Time: "제작기간 : 3시간 | 기여도 : 50% [Mock-up and AI-utilized works]",
       design_kr: "디자인요소",
       design_en: "[design Element]",
-      // font: ["Sandoll 공병각필", "Sandoll 방각본" ,"KoPub돋움체_Pro" ],
-      color: ["#D70029", "#ffffff"],
+      font: ["Noto sans KR" ],
+      color: ["#D70029", "#71512F","#7A28A9"],
       Tool_kr: "사용한 툴",
       Tool_en: "[Use Tools]",
       Tool: ["illustrator", "Freepik"],
@@ -94,11 +94,11 @@ function Work2() {
       UIUX_kr: "키워드",
       UIUX_en: "[description]",
       description:
-        "#포스터 #앱출시홍보 #만불사 #앱기획서 #사용자유입경로설정 #어도비 #일러스트",
-      image_web: "img/work/100만 만불회원 만불사 앱 출시.png",
-      image_tablet: "img/work/100만 만불회원 만불사 앱 출시.png",
-      image_mobile: "img/work/100만 만불회원 만불사 앱 출시.png",
-      href: "https://drive.google.com/file/d/1lhFwhOTirpuHmng_Lw4dHiMKUAKQxTtl/view?usp=sharing",
+        "#앱아이콘 #아이콘디자인 #로고디자인 #만불사 #어도비 #일러스트",
+      image_web: "img/work/App 만불사 로고 모아보기 ver1.png",
+      image_tablet: "img/work/App 만불사 로고 모아보기 ver1.png",
+      image_mobile: "img/work/App 만불사 로고 모아보기 ver1.png",
+      href: "https://drive.google.com/file/d/1ZGL6cS_heeT4WWq5ZLyyzlwSt3FaBxC-/view?usp=sharing",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
