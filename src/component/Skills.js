@@ -170,34 +170,64 @@ function Skills() {
   const ToggleClick = () => {
     setIsToggleVisible((prev) => !prev);    
   };
+  // 2026-01-21
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           // 애니메이션을 위해 transition을 설정
+  //           const target = entry.target;
+  //           target.style.transition = "width 1s ease-in-out"; // 애니메이션을 추가
+  //           target.style.width = target.dataset.width + "%"; // 원래 부여된 값으로 확장
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.25, rootMargin: "0px 0px -50px 0px" }
+  //   );
 
+  //   // progressRefs.current의 값들을 순회하며 각각의 요소를 관찰합니다.
+  //   Object.values(progressRefs.current).forEach((el) => {
+  //     if (el) observer.observe(el);
+  //   });
+
+  //   return () => {
+  //     // 컴포넌트가 unmount될 때 모든 요소의 관찰을 종료합니다.
+  //     Object.values(progressRefs.current).forEach((el) => {
+  //       if (el) observer.unobserve(el);
+  //     });
+  //   };
+  // }, []);
+
+  // 2026-01-21 수정
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // 애니메이션을 위해 transition을 설정
-            const target = entry.target;
-            target.style.transition = "width 1s ease-in-out"; // 애니메이션을 추가
-            target.style.width = target.dataset.width + "%"; // 원래 부여된 값으로 확장
-          }
-        });
-      },
-      { threshold: 0.25, rootMargin: "0px 0px -50px 0px" }
-    );
+  const elements = Object.values(progressRefs.current);
 
-    // progressRefs.current의 값들을 순회하며 각각의 요소를 관찰합니다.
-    Object.values(progressRefs.current).forEach((el) => {
-      if (el) observer.observe(el);
-    });
-
-    return () => {
-      // 컴포넌트가 unmount될 때 모든 요소의 관찰을 종료합니다.
-      Object.values(progressRefs.current).forEach((el) => {
-        if (el) observer.unobserve(el);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          target.style.transition = "width 1s ease-in-out";
+          target.style.width = target.dataset.width + "%";
+        }
       });
-    };
-  }, []);
+    },
+    { threshold: 0.25, rootMargin: "0px 0px -50px 0px" }
+  );
+
+  elements.forEach((el) => {
+    if (el) observer.observe(el);
+  });
+
+  return () => {
+    elements.forEach((el) => {
+      if (el) observer.unobserve(el);
+    });
+    observer.disconnect();
+  };
+}, []);
+
 
   return (
     <section id="About" className="skills">
