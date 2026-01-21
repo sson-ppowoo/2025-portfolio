@@ -55,6 +55,30 @@ function Work() {
       image_mobile: "/img/work/iPhone X 복사2.png",
       href: "https://2025-portfolio-henna.vercel.app/",
     },  
+    {
+      id: 3,
+      title: "만불사 앱 리뉴얼 기획안 작성",
+      title_en: "[Manbulsa App Renewal Plan]",
+      Time: "제작기간 : 24시간 [3일 : 진행중 계약만료] | 기여도 : 100% [Personal Work]",
+      design_kr: "디자인요소",
+      design_en: "[design Element]",
+      font: ["Jua", "NotoSansKR", "SupermercadoOne"],
+      color: ["#D70029", "#57423F", "#BFA6A2", "#AC861F", "#4E4637", "#B4AA99"],
+      Tool_kr: "사용한 툴",
+      Tool_en: "[Use Tools]",
+      Tool: ["Figma"],
+      Tools_img: [
+        "img/icon/skills_icon/10_figma.png",        
+      ],
+      UIUX_kr: "UI/UX",
+      UIUX_en: "[UI/UX_Improvements Points]",
+      description:
+        "#'2025년'#11월부터 #'2026년' #1월까지 #신입 #웹퍼블리셔 #취업 #앱기획 #UI/UX기획 #시니어대상앱 #오너님도시니어 #기획단계 #Figma기획 #와이어프레임 #제작과정 #화면구현 #계약종료건",
+      image_web: "/img/work/IA보드_MenuTree.png",
+      image_tablet: "/img/work/IA보드_MenuTree.png",
+      image_mobile: "/img/work/IA보드_MenuTree.png",
+      href: "https://www.figma.com/design/MvXitCxr6bMT3P43y6X9xl/Manbul_Mandala?node-id=0-1&t=dRyz97y2XMHtdhKy-1",
+    },  
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalProjects = projects.length;

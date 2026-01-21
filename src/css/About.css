@@ -43,9 +43,10 @@
   overflow: hidden;
 }
 
+/* 프로필사진 */
 .About .About_Allbox .About_img>figure>img {
-  transform: translateY(-6%) scale(0.8);
-}
+  /* transform: translateY(-6%) scale(0.8); */
+} 
 
 .About_R .About_text {  
   font-size: 1.2rem;
