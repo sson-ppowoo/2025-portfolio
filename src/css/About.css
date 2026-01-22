@@ -97,18 +97,20 @@
 }
 
 .About_textlist .About_info .info .info1 {
-  gap: 8px;
-  display: flex;
-  line-height: 150%;
+  gap: 16px;
+  display: flex;  
+  line-height: 150%;  
 }
-
-.info1>img,
-.info2>img {
-  width: 24px;
-  height: 24px;
+.About_textlist .About_info .info .info1 .item_more{
+  display: inline-block;
+  padding-left: 40px;
+  float: right;
 }
+.About_textlist .About_info .info .info1 .item_more:hover{
+  color: #9481EB;
+  text-decoration: underline;
 
-
+}
 .About_textlist .About_info .info>span {
   color: #AEA9BA;
   font-size: 1rem;

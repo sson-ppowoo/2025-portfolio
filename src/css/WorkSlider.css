@@ -1,0 +1,133 @@
+.work-slider {
+  width: 100%;
+  max-width: 1600px;
+  margin: 150px auto;
+  position: relative;
+  text-align: center;
+}
+/* 컨테이너: overflow 숨기기 */
+.work-slider-container {
+  overflow: hidden;
+  width: 100%;  
+}
+
+/* 리스트: 가로 배치 + 트랜지션 */
+.work-slider-list {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;  
+}
+
+/* 슬라이드 아이템: 100% 너비 */
+.work-slider-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 이미지 + 텍스트 50:50 */
+.work-slider-link {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-decoration: none;
+  color: inherit;  
+}
+
+.work-slider-image {
+  flex: 1;
+}
+
+.work-slider-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;      
+}
+
+.work-slider-info {
+  flex: 1;
+  text-align: left;  
+}
+
+.work-slider-info .work-title {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.work-slider-info .work-title-en {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.work-slider-info .work-time {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.work-slider-info .work-desc {
+  margin-bottom: 16px;
+  line-height: 1.7;    
+}
+
+/* 폰트/컬러 요소 */
+.font-element span {
+  margin-left: 8px;
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.color-element {
+  display: flex;
+  gap: 8px;  
+  margin: 16px 0 16px;
+}
+
+.color-element div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #ccc;  
+}
+
+/* 툴 아이콘 */
+.work-tools {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;  
+}
+
+.work-tools li img {
+  width: 32px;  
+  height: auto;
+}
+
+/* 슬라이드 번호 + 버튼 */
+.slide-number {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.slide-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 16px;  
+}
+
+.slide-btn figure {
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0;
+}

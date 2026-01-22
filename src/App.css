@@ -39,3 +39,9 @@ body{
   font-family: 'SupermercadoOne.ttf';  
   src: url('../public/font/SupermercadoOne.ttf') format('truetype');  
 }
+.App h2 {  
+  font-family: 'SupermercadoOne.ttf';  
+  font-size: 3rem;
+  margin-bottom: 80px;  
+  text-align: center;
+}

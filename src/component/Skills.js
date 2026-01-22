@@ -24,7 +24,7 @@ const Icon = [
     title: "JavaScript",
     src: `/img/icon/skills_icon/3_JavaScript.png`,
     alt: "JS_icon",
-    progress: 70,
+    progress: 80,
   },
   {
     id: 4,
@@ -96,7 +96,7 @@ const Icon = [
     title: "indesign",
     src: `/img/icon/skills_icon/13_logos_adobe-indesign.png`,
     alt: "indesign_icon",
-    progress: 70,
+    progress: 60,
   },
   {
     id: 13,
@@ -140,24 +140,32 @@ const Icon = [
   },
   {
     id: 18,
+    menu: "PaperWork",
+    title: "Hancom",
+    src: `/img/icon/skills_icon/18_Hancom.png`,
+    alt: "Hancom_icon",
+    progress: 80,
+  },
+  {
+    id: 19,
     menu: "Toggle",
     Text: ": 잘 다룰수 있는 ",
     progress: 90,
   },
   {
-    id: 19,
+    id: 20,
     menu: "Toggle",
     Text: ": 다소 미숙하지만 잘 다룰 수 있는",
     progress: 80,
   },
   {
-    id: 20,
+    id: 21,
     menu: "Toggle",
     Text: ": 미숙하지만 다룰 수 있는",
     progress: 70,
   },
   {
-    id: 21,
+    id: 22,
     menu: "Toggle",
     text: ": 검색과 심화학습, 작업시간이 필요한",
     progress: 60,
@@ -235,7 +243,7 @@ function Skills() {
 
       <div className="skills_AllBox">
         {skillBox.map((skill, idx) => (
-          <div key={idx} className="skill_box">
+          <div key={skill} className="skill_box">
             <h3>{skill}</h3>
 
             <div className="icon_container">
@@ -281,7 +289,7 @@ function Skills() {
           style={{ display: isToggleVisible ? "block" : "none" }}
         >
           {Icon.filter((icon) => icon.menu === "Toggle").map((icon) => (
-            <div key={icon.src} className="toggle_item">
+            <div key={icon.id} className="toggle_item">
               <div className="progress_bar">
                 <div
                   style={{ width: `${icon.progress}%` }}

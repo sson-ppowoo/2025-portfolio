@@ -6,7 +6,7 @@ function Contact() {
       id: 1,
       name: "Instagram",
       url: "https://www.instagram.com/sson_ppowoo/?hl=ko",
-      img: "/img/icon/skill-icons_instagram.png",
+      img: "/img/icon/logos_instagram.png",
     },    
     {
       id: 2,
@@ -20,10 +20,10 @@ function Contact() {
       <div className="ContactAll">
         <h2 className="Contact_title">Contact</h2>
         <p className="Contact_text">
-          첫발을 내딛는 지금, 새로운 도전에 대한 기대와 열정으로 가득합니다.<br/>
-          배움을 멈추지 않고 성장하며, 긍정적인 변화를 만들어가는 웹 퍼블리셔가
-          되겠습니다. <br/>저의 프로젝트를 봐주셔서 감사합니다. 더 궁금하시다면
-          언제든지 연락 주세요! (●'◡'●)
+          신입 웹 퍼블리셔로서 아직 배울 것이 많지만, <br/>
+          맡은 역할에 대한 책임감과 꾸준한 학습을 통해 안정적인 화면 구현으로 팀에 기여하고자 합니다.<br/>
+          <br/>
+          저의 포트폴리오를 봐주셔서 감사합니다.
         </p>
         <figure className="Contact_figure">
           <img
