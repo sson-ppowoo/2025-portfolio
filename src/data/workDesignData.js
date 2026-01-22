@@ -6,7 +6,7 @@ const workDesignData = [
       Time: "제작기간 : 1시간 | 기여도 : 50% [Using AI Work]",
       design_kr: "디자인요소",
       design_en: "[design Element]",
-      font: ["| AI Generation Font", ],
+      font: ["AI Generation Font",],
       color: ["#F1EEE3", "#817494"],
       Tool_kr: "사용한 툴",
       Tool_en: "[Use Tools]",
@@ -19,9 +19,9 @@ const workDesignData = [
       UIUX_en: "[description]",
       description:
         "#로고제작 #초대장스튜디오 #로고디자인 #포토샵 #AI활용디자인 #ChatGPT",
-      image_web: "img/work/songil_logo.png",
-      image_tablet: "img/work/songil_logo.png",
-      image_mobile: "img/work/songil_logo.png",
+      image_web: "img/work/2-1songil_logo.png",
+      image_tablet: "",
+      image_mobile: "",
       href: "https://drive.google.com/file/d/1kCZ0BVbHBu4CoLFGg350jO0GV78jP1t_/view?usp=sharing",
     },
     {
@@ -44,9 +44,9 @@ const workDesignData = [
       UIUX_en: "[description]",
       description:
         "#배너제작 #배너디자인 #유투브대문제작 #규격에 맞춘 디자인 #포토샵 #AI활용디자인 #ChatGPT",
-      image_web: "img/work/youtube 배너 _ leesalin.png",
-      image_tablet: "img/work/youtube 배너 _ leesalin.png",
-      image_mobile: "img/work/youtube 배너 _ leesalin.png",
+      image_web: "img/work/2-2youtube _ leesalin.png",
+      image_tablet: "",
+      image_mobile: "",
       href: "https://drive.google.com/file/d/1LUBKHO_8RLW9CQwxIKRgFEfwp7R-2-G1/view?usp=sharing",
     },
     {
@@ -68,9 +68,9 @@ const workDesignData = [
       UIUX_en: "[description]",
       description:
         "#포스터 #앱출시홍보 #만불사 #앱기획서 #사용자유입경로설정 #어도비 #일러스트",
-      image_web: "img/work/100만 만불회원 만불사 앱 출시.png",
-      image_tablet: "img/work/100만 만불회원 만불사 앱 출시.png",
-      image_mobile: "img/work/100만 만불회원 만불사 앱 출시.png",
+      image_web: "img/work/2-3manbul app launched.png",
+      image_tablet: "",
+      image_mobile: "",
       href: "https://drive.google.com/file/d/1lhFwhOTirpuHmng_Lw4dHiMKUAKQxTtl/view?usp=sharing",
     },
     {
@@ -92,9 +92,9 @@ const workDesignData = [
       UIUX_en: "[description]",
       description:
         "#앱아이콘 #아이콘디자인 #로고디자인 #만불사 #어도비 #일러스트",
-      image_web: "img/work/App 만불사 로고 모아보기 ver1.png",
-      image_tablet: "img/work/App 만불사 로고 모아보기 ver1.png",
-      image_mobile: "img/work/App 만불사 로고 모아보기 ver1.png",
+      image_web: "img/work/2-4App Logo ver1.png",
+      image_tablet: "",
+      image_mobile: "",
       href: "https://drive.google.com/file/d/1ZGL6cS_heeT4WWq5ZLyyzlwSt3FaBxC-/view?usp=sharing",
     },
 ];

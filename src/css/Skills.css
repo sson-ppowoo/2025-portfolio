@@ -55,8 +55,8 @@
   gap: 16px;
   font-family: "Jua";
   font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 32px;    
+  font-weight: 500;  
+  margin-bottom: 6vh;    
 }
 .icon_container .skill_item {
   width: 100%;
@@ -106,8 +106,8 @@
 }
 .progress_bar .progress .progress_butterfly .learning {  
   position: absolute;
-  top: -40%;
-  right: -40%;
+  top: -30%;
+  right: -50%;
   font-size: 1rem;
   font-weight: 500; 
 }

@@ -1,6 +1,6 @@
 @media (max-width: 1800px) {
   .header, .main, .About, 
-  .skills, .Work, .Contact {
+  .skills, .Contact {
     padding: 0 16px;
   }
   .nav .Right_nav_box {
@@ -19,7 +19,7 @@
 }
 @media (max-width: 1500px) {
   .menu.open {
-    transform: translateX(25%);
+    transform: translateX(25%);    
   }  
 }
 @media (max-width: 1400px) {
@@ -78,30 +78,31 @@
   }
   .skills .skills_AllBox{    
     display: flex !important;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap !important;    
   } 
   .icon_container .skill_item{
-    width: fit-content !important;
+    width: 350px !important;    
   }
   .skills_AllBox .skill_box .icon_container{
     flex-direction: row !important;
     width: fit-content;
     height: auto;    
     flex-wrap: wrap;    
-    align-items: flex-end !important;    
+    align-items: flex-end !important;        
+    gap: 3vh !important;
   }
   .icon_container .skill_item{
-    flex-direction: column;   
+    flex-direction: column;           
   }
   .progress_bar{
-    width: 100px !important;      
+    width: 120px !important;
   }
   .progress_bar .progress{
-    height: 15px !important;    
+    height: 16px !important;    
     background-color: #9481EB !important;
   }  
   .progress_bar .progress .progress_butterfly .learning{
-    top: 90% !important;   
+    top: 70% !important;   
     font-size: 0.85rem !important;
   } 
   .progress_bar .progress .progress_butterfly .butterfly_icon {
@@ -109,7 +110,7 @@
   }
   .Toggle {
     width: 30% !important;
-    bottom: -62% !important;
+    bottom: 0% !important;
     right: 4% !important;
   }
   .Toggle .toggle_item .progress_bar{
@@ -184,16 +185,18 @@
   }
   .About_R .About_text > p .br3 {
     display: block;
-  }    
-  #Work .Work_container .Work_item{
-    flex-direction: column;    
-    gap: 50px;
+  }      
+  .work-slider-link{
+    flex-direction: column;       
   }
   .Toggle {
     display: none !important;
   }
   .Toggle_icon{      
     display: none !important;
+  }  
+  .slide-number{
+    right: 6.2vw !important;    
   }
 }
 @media (max-width: 925px) {
@@ -218,7 +221,11 @@
     top: -1vh !important;
   }
 }
-
+@media (max-width: 768px) {
+  .slide-number{
+      right: 7vw !important;    
+    }
+}
 @media (max-width: 650px) {
   .logobox .logo_text {
     font-size: 1.5rem !important;
@@ -233,19 +240,7 @@
   }
   .menu.open {
     width: 15vw;
-  }  
-  .Work_description .Work_title > h3,
-  .Work_description .design .design_box > h3,
-  .Work_description .useTools .tools_title > h3,
-  .Work_description .uiux .Work_UIUX > h3 {
-    font-size: 1rem !important;
-  }
-  .Work_description .Work_title > span,
-  .Work_description .design .design_box > span,
-  .Work_description .useTools .tools_title > span,
-  .Work_description .uiux .Work_UIUX > span {
-    font-size: 0.8rem !important;
-  }
+  }    
 }
 @media (max-width: 583px) {
   .menu.open {
@@ -294,6 +289,11 @@
     transform: scale(0.7);
   }
 }
+@media (max-width: 380px) {  
+  .work-slider-info .work-title {
+    font-size: 1.5rem !important;
+  }  
+}
 @media (max-width: 370px) {
   .header_i .logobox {
     max-width: 75vw !important;
@@ -301,6 +301,9 @@
   .header_i .logobox .logo_text {
     width: 63vw;
   }
+  .slide-number{
+      right: 8vw !important;    
+    }
 }
 @media (max-width: 360px) {
   .text_motto {

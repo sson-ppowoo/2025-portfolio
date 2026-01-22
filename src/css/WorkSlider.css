@@ -23,17 +23,17 @@
   min-width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 
 /* 이미지 + 텍스트 50:50 */
-.work-slider-link {
+.work-slider-link {  
   display: flex;
   width: 90%;
   max-width: 1200px;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
+  align-items: center;  
+  gap: 4vh;
   text-decoration: none;
   color: inherit;  
 }
@@ -51,7 +51,7 @@
 
 .work-slider-info {
   flex: 1;
-  text-align: left;  
+  text-align: left;    
 }
 
 .work-slider-info .work-title {
@@ -78,7 +78,9 @@
 
 /* 폰트/컬러 요소 */
 .font-element span {
-  margin-left: 8px;
+  display: flex;  
+  max-width: fit-content;
+  margin: 4px 8px;
   padding: 2px 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -110,20 +112,19 @@
 }
 
 /* 슬라이드 번호 + 버튼 */
-.slide-number {
+.slide-number {  
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  right: 5.5vw;  
   font-weight: 500;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem;  
+}  
 
 .slide-btn {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  right: 1vw;  
+  bottom: 0.1vw;
   display: flex;
-  gap: 16px;  
+  gap: 8vw;  
 }
 
 .slide-btn figure {
