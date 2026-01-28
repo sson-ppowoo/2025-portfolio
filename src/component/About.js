@@ -20,7 +20,7 @@ import ResumeLinks from "../component/ResumeLinks";
 const resumeLinks = [
   {
     label: "이력서",
-    href: "https://drive.google.com/file/d/1j3ohp2Y5kgxrk1QNykGEwF70GT93Q8pr/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1BgVLm1HWMl2e41pb19jFhFPwe-3qgcJP/view?usp=sharing",
   },
   {
     label: "자소서",

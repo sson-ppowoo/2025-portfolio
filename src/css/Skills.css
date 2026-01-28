@@ -75,6 +75,16 @@
   gap: 8px;
   flex: 1;
 }
+
+.skill_link {
+  display: inline-block;
+}
+.skill_link:hover .icon_img {
+  transform: scale(1.15);
+  transition: 0.2s;
+  filter: brightness(1.1);
+  cursor: pointer;
+}
 .skill_itemBox .icon_img{
   max-width: 38px;
 }

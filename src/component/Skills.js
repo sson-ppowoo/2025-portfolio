@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const skillBox = ["Web_publishing", "Design", "PaperWork","Collaboration"];
+const skillBox = ["Web_publishing", "Design", "PaperWork", "Collaboration"];
 const Icon = [
   {
     id: 1,
@@ -57,7 +57,7 @@ const Icon = [
     src: `/img/icon/skills_icon/7_react_redux.png`,
     alt: "React Redux_icon",
     progress: 60,
-  },  
+  },
   {
     id: 8,
     menu: "Web_publishing",
@@ -129,6 +129,7 @@ const Icon = [
     src: `/img/icon/uiw_github.png`,
     alt: "github_icon",
     progress: 80,
+    link: "https://github.com/sson-ppowoo",
   },
   {
     id: 17,
@@ -137,6 +138,7 @@ const Icon = [
     src: `/img/icon/logos_notion-icon.png`,
     alt: "Notion_icon",
     progress: 80,
+    link: "https://www.notion.so/AI-React-_-19b08908d81380408aeac4e606efa87c?source=copy_link",
   },
   {
     id: 18,
@@ -176,7 +178,7 @@ function Skills() {
   const progressRefs = useRef({});
 
   const ToggleClick = () => {
-    setIsToggleVisible((prev) => !prev);    
+    setIsToggleVisible((prev) => !prev);
   };
   // 2026-01-21
   // useEffect(() => {
@@ -209,33 +211,32 @@ function Skills() {
 
   // 2026-01-21 수정
   useEffect(() => {
-  const elements = Object.values(progressRefs.current);
+    const elements = Object.values(progressRefs.current);
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const target = entry.target;
-          target.style.transition = "width 1s ease-in-out";
-          target.style.width = target.dataset.width + "%";
-        }
-      });
-    },
-    { threshold: 0.25, rootMargin: "0px 0px -50px 0px" }
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = entry.target;
+            target.style.transition = "width 1s ease-in-out";
+            target.style.width = target.dataset.width + "%";
+          }
+        });
+      },
+      { threshold: 0.25, rootMargin: "0px 0px -50px 0px" }
+    );
 
-  elements.forEach((el) => {
-    if (el) observer.observe(el);
-  });
-
-  return () => {
     elements.forEach((el) => {
-      if (el) observer.unobserve(el);
+      if (el) observer.observe(el);
     });
-    observer.disconnect();
-  };
-}, []);
 
+    return () => {
+      elements.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <section id="About" className="skills">
@@ -249,10 +250,30 @@ function Skills() {
             <div className="icon_container">
               {Icon.filter((icon) => icon.menu === skill).map((icon) => (
                 <div key={icon.src} className="skill_item">
-                  <div className="skill_itemBox">
+                  {/* <div className="skill_itemBox">
                     <img src={icon.src} alt={icon.alt} className="icon_img" />
                     <span className="icon_title">{icon.title}</span>
+                  </div> */}
+                  <div className="skill_itemBox">
+                    {icon.link ? (
+                      <a
+                        href={icon.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="skill_link"
+                      >
+                        <img
+                          src={icon.src}
+                          alt={icon.alt}
+                          className="icon_img"
+                        />
+                      </a>
+                    ) : (
+                      <img src={icon.src} alt={icon.alt} className="icon_img" />
+                    )}
+                    <span className="icon_title">{icon.title}</span>
                   </div>
+
                   {icon.progress && (
                     <div className="progress_bar">
                       <div
