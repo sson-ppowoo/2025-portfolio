@@ -96,8 +96,9 @@
   background-color: #aea9bb;
   box-shadow: 6px 6px 6px 0px #aea9bb;  
   border-radius: 25px;  
-  position: relative;  
+  position: relative;    
 }
+
 .progress_bar .progress {
   height: 25px;  
   background-color: #AA9AE1;  

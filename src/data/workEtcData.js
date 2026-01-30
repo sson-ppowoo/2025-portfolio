@@ -46,7 +46,7 @@ const workEtcData = [
       "#스톡이미지제작 #자체제작 #오브젝트 #포토샵 #디자인 #그림 #PNG #가을 #단풍",
     image_web: "img/work/3-2Maple.png",
     image_tablet: "img/work/3-2Maple.png",
-    image_mobile: "img/work/.png",
+    image_mobile: "img/work/3-2Maple.png",
     // href: "https://drive.google.com/file/d/1kCZ0BVbHBu4CoLFGg350jO0GV78jP1t_/view?usp=sharing",
   },
   {

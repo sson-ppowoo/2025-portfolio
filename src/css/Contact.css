@@ -36,6 +36,10 @@
 #Contact .ContactAll .SNSurl{  
   display: flex;  
   justify-content: center;  
-  align-items: center;
+  align-items: center;  
   gap: 5vw;
+}
+#Contact .ContactAll .SNSurl>button{
+  background-color: transparent;
+  border: transparent;
 }
