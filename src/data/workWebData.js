@@ -54,7 +54,7 @@ const workWebData = [
     },
     {
       id: 3,
-      title: "만불사 앱 리뉴얼 기획안 작성",
+      title: "만불사 앱 리뉴얼 계획 참여",
       title_en: "[Manbulsa App Renewal Plan]",
       Time: "제작기간 : 24시간 [3일 : 계약만료] | 기여도 : 100% [Personal Work]",
       design_kr: "디자인요소",
@@ -69,7 +69,7 @@ const workWebData = [
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
         "#Figma #와이어프레임 #앱기획 #UI/UX기획 #시니어대상앱 #시니어오너 #2025년#11월부터 #'2026년' #2월까지 #3개월계약 #제작과정 #화면디자인 #계약종료건",
-      image_web: "/img/work/1-3IA_MenuTree.png",
+      image_web: "/img/work/1-3 manbul Web Planning.gif",
       image_tablet: "",
       image_mobile: "",
       href: "https://www.figma.com/design/MvXitCxr6bMT3P43y6X9xl/Manbul_Mandala?node-id=0-1&t=dRyz97y2XMHtdhKy-1",

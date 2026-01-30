@@ -45,11 +45,11 @@
 .work-slider-image img {
   width: 100%;
   height: auto;
-  display: block;
-  border-radius: 12px;      
+  display: block; 
+  
 }
 
-.work-slider-info {
+.work-slider-info {  
   flex: 1;
   text-align: left;    
 }
@@ -100,7 +100,7 @@
 }
 
 /* 툴 아이콘 */
-.work-tools {
+.work-tools {  
   display: flex;
   gap: 16px;
   margin-top: 16px;  
