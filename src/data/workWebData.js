@@ -7,7 +7,7 @@ const workWebData = [
       design_kr: "디자인요소",
       design_en: "[design Element]",
       font: ["NanumGothic", "ChosunCentennial"],
-      color: ["#CF3E58", "#C30E2E", "#efefef"],
+      color: ["#C30E2E","#392E2C", "#efefef"],
       Tool_kr: "사용한 툴",
       Tool_en: "[Use Tools]",
       Tool: ["HTML5", "CSS3", "JavaScript"],
@@ -69,9 +69,9 @@ const workWebData = [
       UIUX_en: "[UI/UX_Improvements Points]",
       description:
         "#Figma #와이어프레임 #앱기획 #UI/UX기획 #시니어대상앱 #시니어오너 #2025년#11월부터 #'2026년' #2월까지 #3개월계약 #제작과정 #화면디자인 #계약종료건",
-      image_web: "/img/work/1-3 manbul Web Planning.gif",
-      image_tablet: "",
-      image_mobile: "",
+      image_web: "/img/work/1-3 manbul App Planning.gif",
+      image_tablet: "/img/work/1-3 manbul App_Pad.png",
+      image_mobile: "/img/work/1-3 manbul App_iPhone.gif",
       href: "https://www.figma.com/design/MvXitCxr6bMT3P43y6X9xl/Manbul_Mandala?node-id=0-1&t=dRyz97y2XMHtdhKy-1",
     },
 ];
